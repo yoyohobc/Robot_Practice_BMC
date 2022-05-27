@@ -1,0 +1,509 @@
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+Copyright (c) 2020 Foxconn. All Rights Reserved.
+For Conan Project
+------------------------------------------------------------------------------
+------------------------------------------------------------------------------
+
+OVSS_Configcheck verification
+version: 1.0 (2020/11/09)
+
+---------------------------------Test Date------------------------------------
+2020-11-04 13:40:20
+
+
+---------------------------------BIOS  Version--------------------------------
+
+BIOS version: 9999999.20220428.161210-0
+
+
+---------------------------------BMC version----------------------------------
+
+check BMC version:  22.19
+
+
+---------------------------------Kernel Version-------------------------------
+
+Kernel Version: 
+Linux localhost 5.10.23-intel-pk-standard #1 SMP Tue Mar 16 08:18:48 UTC 2021 x86_64 x86_64 x86_64 GNU/Linux
+
+
+---------------------------------NIC FW Version-------------------------------
+
+NIC FW Version
+firmware-version: 105.21.370453302.20210427
+
+
+---------------------------------NIC EEPROM-----------------------------------
+
+NIC EEPROM
+
+
+---------------------------------Granite Haven FW-----------------------------
+
+Granite Haven FW
+firmware-version: 105.21.370453302.20210427
+
+
+---------------------------------cSSD FW--------------------------------------
+
+cSSD FW
+Firmware Version: S0124AST
+
+
+---------------------------------gsys Version---------------------------------
+
+gsys FW
+
+
+---------------------------------Memory---------------------------------------
+
+DIMM count
+0
+
+
+DIMM size
+
+DIMM speed
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+	Speed: 4800 MT/s
+
+Slot assignment (halfpop)
+Getting SMBIOS data from sysfs.
+SMBIOS 3.3.0 present.
+	Serial Number: 027BF5A5
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF4A5
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF5AD
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF548
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 021A8227
+	Part Number: M321R4GA0BB0-CQKVG  
+	Serial Number: 021A82C8
+	Part Number: M321R4GA0BB0-CQKVG  
+	Serial Number: 021A8228
+	Part Number: M321R4GA0BB0-CQKVG  
+	Serial Number: 021A94C4
+	Part Number: M321R4GA0BB0-CQKVG  
+	Serial Number: 021A9141
+	Part Number: M321R4GA0BB0-CQKVG  
+	Serial Number: 021A7E05
+	Part Number: M321R4GA0BB0-CQKVG  
+	Serial Number: 027BF4FA
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF576
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF55A
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF50C
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF4FD
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF512
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF582
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF4FE
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF557
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF4FB
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF55D
+	Part Number: M321RAGA0B20-CWKZH  
+	Serial Number: 027BF57B
+	Part Number: M321RAGA0B20-CWKZH  
+
+Part number
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321R4GA0BB0-CQKVG  
+	Part Number: M321R4GA0BB0-CQKVG  
+	Part Number: M321R4GA0BB0-CQKVG  
+	Part Number: M321R4GA0BB0-CQKVG  
+	Part Number: M321R4GA0BB0-CQKVG  
+	Part Number: M321R4GA0BB0-CQKVG  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+	Part Number: M321RAGA0B20-CWKZH  
+
+Type
+
+DIMM Thermal & Margins 
+
+
+---------------------------------NIC------------------------------------------
+
+PCI bus width/Speed
+
+PCI address
+
+Link speed
+	Speed: 100000Mb/s
+
+Link state(up/Down)
+	Link detected: yes
+
+
+---------------------------------CPUs-----------------------------------------
+
+Product name
+	Version: AMD Eng Sample: 100-000000627-12               
+	Version: AMD Eng Sample: 100-000000627-12               
+
+Socket enabled
+64
+
+
+Threads per core
+	Thread Count: 32
+		Hardware Thread
+	Thread Count: 32
+		Hardware Thread
+
+
+Core count per CPU
+	Core Count: 16
+	Core Enabled: 16
+		Multi-Core
+	Core Count: 16
+	Core Enabled: 16
+		Multi-Core
+
+
+Core Core/socket thermal & margin sensors 
+
+
+
+Socket power sensors
+
+
+
+Socket voltage sensors
+
+
+
+---------------------------------Motherboard-----------------------------------
+
+Manufacturer
+ Board Mfg Date        : Wed Aug  9 16:55:00 2017
+ Board Mfg             : Foxconn
+ Board Mfg Date        : Tue Jan  2 13:45:00 2024
+ Board Mfg             : Foxconn
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021
+ Board Mfg             : Kingston
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021
+ Board Mfg             : Kingston
+ Board Mfg Date        : Thu Jul  8 14:17:00 2021
+ Board Mfg             : Kingston
+ Board Mfg Date        : Tue Apr 27 09:17:00 2021
+ Board Mfg             : Celestica
+ Board Mfg Date        : Wed Jan 19 13:14:00 2022
+ Board Mfg             : Quanta
+ Board Mfg Date        : Thu Jul  8 14:19:00 2021
+ Board Mfg             : Kingston
+
+
+Various mobo current sensors
+BRICK1 P12V IOUT | 00h | ok  | 14.9 | 7.22 Amps
+BRICK2 P12V IOUT | 01h | ok  | 14.10 | 5.86 Amps
+CPU0 P1V1 IOUT   | 02h | ok  |  3.54 | 8.16 Amps
+CPU0 P1V8 IOUT   | 03h | ok  |  3.57 | 4.69 Amps
+CPU0 P3V3 IOUT   | 04h | ok  |  3.55 | 0 Amps
+CPU0 VCORE0 IOUT | 05h | ok  |  3.51 | 0 Amps
+CPU0 VCORE1 IOUT | 06h | ok  |  3.53 | 0 Amps
+CPU0 VDDIO IOUT  | 07h | ok  |  3.56 | 24.84 Amps
+CPU0 VSOC IOUT   | 08h | ok  |  3.52 | 48.10 Amps
+CPU1 P1V1 IOUT   | 09h | ok  |  3.61 | 10.61 Amps
+CPU1 P1V8 IOUT   | 0Ah | ok  |  3.64 | 3.48 Amps
+CPU1 P3V3 IOUT   | 0Bh | ok  |  3.62 | 0 Amps
+CPU1 VCORE0 IOUT | 0Ch | ok  |  3.58 | 0 Amps
+CPU1 VCORE1 IOUT | 0Dh | ok  |  3.60 | 0 Amps
+CPU1 VDDIO IOUT  | 0Eh | ok  |  3.63 | 16.56 Amps
+CPU1 VSOC IOUT   | 0Fh | ok  |  3.59 | 44.85 Amps
+MAIN P3V3 IOUT   | 10h | ok  |  7.8 | 0 Amps
+P48V IOUT        | 11h | ok  | 14.11 | 7.72 Amps
+fan0 pwm         | 12h | ok  | 29.0 | 29.79 unspecifi
+fan1 pwm         | 13h | ok  | 29.1 | 29.79 unspecifi
+fan2 pwm         | 14h | ok  | 29.2 | 19.99 unspecifi
+fan3 pwm         | 15h | ok  | 29.3 | 19.99 unspecifi
+fan4 pwm         | 16h | ok  | 29.4 | 39.98 unspecifi
+fan5 pwm         | 17h | ok  | 29.5 | 39.98 unspecifi
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+fan2 tach        | 1Ah | ok  | 29.2 | 3550 RPM
+fan3 tach        | 1Bh | ok  | 29.3 | 3621 RPM
+fan4 tach        | 1Ch | ok  | 29.4 | 9120 RPM
+fan5 tach        | 1Dh | ok  | 29.5 | 9234 RPM
+CPU0 P1V1 POUT   | 1Eh | ok  |  3.22 | 7.18 Watts
+CPU0 P1V8 POUT   | 1Fh | ok  |  3.25 | 6.99 Watts
+CPU0 P3V3 POUT   | 20h | ok  |  3.23 | 0 Watts
+CPU0 VCORE0 POUT | 21h | ok  |  3.19 | 0 Watts
+CPU0 VCORE1 POUT | 22h | ok  |  3.21 | 0 Watts
+CPU0 VDDIO POUT  | 23h | ok  |  3.24 | 26.24 Watts
+CPU0 VSOC POUT   | 24h | ok  |  3.20 | 55.38 Watts
+CPU1 P1V1 POUT   | 25h | ok  |  3.29 | 10.78 Watts
+CPU1 P1V8 POUT   | 26h | ok  |  3.32 | 6.99 Watts
+CPU1 P3V3 POUT   | 27h | ok  |  3.30 | 0 Watts
+CPU1 VCORE0 POUT | 28h | ok  |  3.26 | 0 Watts
+CPU1 VCORE1 POUT | 29h | ok  |  3.28 | 0 Watts
+CPU1 VDDIO POUT  | 2Ah | ok  |  3.31 | 18.04 Watts
+CPU1 VSOC POUT   | 2Bh | ok  |  3.27 | 52.26 Watts
+HOTSWAP PIN      | 2Ch | ok  | 14.5 | 413 Watts
+BRICK1 P12V T    | 2Dh | ok  | 14.7 | 32 degrees C
+BRICK2 P12V T    | 2Eh | ok  | 14.8 | 31 degrees C
+CPU0 DIMM 0 T    | 2Fh | ns  |  8.25 | No Reading
+CPU0 DIMM 1 T    | 30h | ns  |  8.26 | No Reading
+CPU0 NBM T       | 31h | ns  |  3.49 | No Reading
+CPU0 P1V1 T      | 32h | ok  |  3.38 | 37 degrees C
+CPU0 P1V8 T      | 33h | ok  |  3.45 | 39 degrees C
+CPU0 P3V3 T      | 34h | ok  |  3.42 | 38 degrees C
+CPU0 T           | 35h | ok  |  3.47 | 55 degrees C
+CPU0 VCORE0 T    | 36h | ok  |  3.33 | 42 degrees C
+CPU0 VCORE1 T    | 37h | ok  |  3.37 | 36 degrees C
+CPU0 VIO T       | 38h | ok  |  3.41 | 41 degrees C
+CPU0 VSOC T      | 39h | ok  |  3.34 | 44 degrees C
+CPU1 DIMM 0 T    | 3Ah | ns  |  8.27 | No Reading
+CPU1 DIMM 1 T    | 3Bh | ns  |  8.28 | No Reading
+CPU1 NBM T       | 3Ch | ns  |  3.50 | No Reading
+CPU1 P1V1 T      | 3Dh | ok  |  3.40 | 37 degrees C
+CPU1 P1V8 T      | 3Eh | ok  |  3.46 | 39 degrees C
+CPU1 P3V3 T      | 3Fh | ok  |  3.44 | 35 degrees C
+CPU1 T           | 40h | ok  |  3.48 | 57 degrees C
+CPU1 VCORE0 T    | 41h | ok  |  3.35 | 42 degrees C
+CPU1 VCORE1 T    | 42h | ok  |  3.39 | 36 degrees C
+CPU1 VIO T       | 43h | ok  |  3.43 | 38 degrees C
+CPU1 VSOC T      | 44h | ok  |  3.36 | 46 degrees C
+DIMM0 T          | 45h | ns  |  8.1 | No Reading
+DIMM1 T          | 46h | ns  |  8.2 | No Reading
+DIMM2 T          | 47h | ns  |  8.3 | No Reading
+DIMM3 T          | 48h | ns  |  8.4 | No Reading
+DIMM4 T          | 49h | ns  |  8.5 | No Reading
+DIMM5 T          | 4Ah | ns  |  8.6 | No Reading
+DIMM6 T          | 4Bh | ns  |  8.7 | No Reading
+DIMM7 T          | 4Ch | ns  |  8.8 | No Reading
+DIMM8 T          | 4Dh | ns  |  8.9 | No Reading
+DIMM9 T          | 4Eh | ns  |  8.10 | No Reading
+DIMM10 T         | 4Fh | ns  |  8.11 | No Reading
+DIMM11 T         | 50h | ns  |  8.12 | No Reading
+DIMM12 T         | 51h | ns  |  8.13 | No Reading
+DIMM13 T         | 52h | ns  |  8.14 | No Reading
+DIMM14 T         | 53h | ns  |  8.15 | No Reading
+DIMM15 T         | 54h | ns  |  8.16 | No Reading
+DIMM16 T         | 55h | ns  |  8.17 | No Reading
+DIMM17 T         | 56h | ns  |  8.18 | No Reading
+DIMM18 T         | 57h | ns  |  8.19 | No Reading
+DIMM19 T         | 58h | ns  |  8.20 | No Reading
+DIMM20 T         | 59h | ns  |  8.21 | No Reading
+DIMM21 T         | 5Ah | ns  |  8.22 | No Reading
+DIMM22 T         | 5Bh | ns  |  8.23 | No Reading
+DIMM23 T         | 5Ch | ns  |  8.24 | No Reading
+HOTSWAP T        | 5Dh | ok  | 14.6 | 31 degrees C
+M2 T             | 5Eh | ns  |  7.7 | No Reading
+MB INLET T       | 5Fh | ok  | 16.8 | 21 degrees C
+MB OUTLET T 1    | 60h | ok  |  7.4 | 29 degrees C
+MB OUTLET T 2    | 61h | ok  |  7.5 | 32 degrees C
+MB OUTLET T 3    | 62h | ok  |  7.6 | 24 degrees C
+BMC P1V0         | 63h | ok  | 16.3 | 1.01 Volts
+BMC P1V2         | 64h | ok  | 16.4 | 1.20 Volts
+BMC P1V8         | 65h | ok  | 16.5 | 1.81 Volts
+BMC P2V5         | 66h | ok  | 16.6 | 2.51 Volts
+BMC P3V3 STBY    | 67h | ok  | 16.7 | 3.39 Volts
+BMC PV6          | 68h | ok  | 16.2 | 0.60 Volts
+BRICK1 P12V      | 69h | ok  | 14.3 | 12.03 Volts
+BRICK2 P12V      | 6Ah | ok  | 14.4 | 12.10 Volts
+CPU0 13V5        | 6Bh | ok  |  3.8 | 13.42 Volts
+CPU0 P1V1        | 6Ch | ok  |  3.4 | 1.10 Volts
+CPU0 P1V8        | 6Dh | ok  |  3.7 | 1.80 Volts
+CPU0 P3V3        | 6Eh | ok  |  3.5 | 2.75 Volts
+CPU0 VCORE0      | 6Fh | ok  |  3.1 | 1.03 Volts
+CPU0 VCORE1      | 70h | ok  |  3.3 | 1.03 Volts
+CPU0 VDDIO       | 71h | ok  |  3.6 | 1.12 Volts
+CPU0 VSOC        | 72h | ok  |  3.2 | 1.18 Volts
+CPU1 13V5        | 73h | ok  |  3.16 | 13.49 Volts
+CPU1 P1V1        | 74h | ok  |  3.12 | 1.10 Volts
+CPU1 P1V8        | 75h | ok  |  3.15 | 1.80 Volts
+CPU1 P3V3        | 76h | ok  |  3.13 | 2.75 Volts
+CPU1 VCORE0      | 77h | ok  |  3.9 | 1.03 Volts
+CPU1 VCORE1      | 78h | ok  |  3.11 | 1.03 Volts
+CPU1 VDDIO       | 79h | ok  |  3.14 | 1.12 Volts
+CPU1 VSOC        | 7Ah | ok  |  3.10 | 1.18 Volts
+MAIN P3V3        | 7Bh | ok  |  7.2 | 3.30 Volts
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+
+
+Various mobo voltage sensors
+BMC P1V0         | 63h | ok  | 16.3 | 1.01 Volts
+BMC P1V2         | 64h | ok  | 16.4 | 1.20 Volts
+BMC P1V8         | 65h | ok  | 16.5 | 1.81 Volts
+BMC P2V5         | 66h | ok  | 16.6 | 2.51 Volts
+BMC P3V3 STBY    | 67h | ok  | 16.7 | 3.39 Volts
+BMC PV6          | 68h | ok  | 16.2 | 0.60 Volts
+BRICK1 P12V      | 69h | ok  | 14.3 | 12.03 Volts
+BRICK2 P12V      | 6Ah | ok  | 14.4 | 12.10 Volts
+CPU0 13V5        | 6Bh | ok  |  3.8 | 13.42 Volts
+CPU0 P1V1        | 6Ch | ok  |  3.4 | 1.10 Volts
+CPU0 P1V8        | 6Dh | ok  |  3.7 | 1.80 Volts
+CPU0 P3V3        | 6Eh | ok  |  3.5 | 2.75 Volts
+CPU0 VCORE0      | 6Fh | ok  |  3.1 | 1.03 Volts
+CPU0 VCORE1      | 70h | ok  |  3.3 | 1.03 Volts
+CPU0 VDDIO       | 71h | ok  |  3.6 | 1.12 Volts
+CPU0 VSOC        | 72h | ok  |  3.2 | 1.18 Volts
+CPU1 13V5        | 73h | ok  |  3.16 | 13.49 Volts
+CPU1 P1V1        | 74h | ok  |  3.12 | 1.10 Volts
+CPU1 P1V8        | 75h | ok  |  3.15 | 1.80 Volts
+CPU1 P3V3        | 76h | ok  |  3.13 | 2.75 Volts
+CPU1 VCORE0      | 77h | ok  |  3.9 | 1.03 Volts
+CPU1 VCORE1      | 78h | ok  |  3.11 | 1.03 Volts
+CPU1 VDDIO       | 79h | ok  |  3.14 | 1.12 Volts
+CPU1 VSOC        | 7Ah | ok  |  3.10 | 1.18 Volts
+MAIN P3V3        | 7Bh | ok  |  7.2 | 3.30 Volts
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+
+
+Various mobo Power sensors
+CPU0 P1V1 POUT   | 1Eh | ok  |  3.22 | 7.18 Watts
+CPU0 P1V8 POUT   | 1Fh | ok  |  3.25 | 6.99 Watts
+CPU0 P3V3 POUT   | 20h | ok  |  3.23 | 0 Watts
+CPU0 VCORE0 POUT | 21h | ok  |  3.19 | 0 Watts
+CPU0 VCORE1 POUT | 22h | ok  |  3.21 | 0 Watts
+CPU0 VDDIO POUT  | 23h | ok  |  3.24 | 26.24 Watts
+CPU0 VSOC POUT   | 24h | ok  |  3.20 | 55.38 Watts
+CPU1 P1V1 POUT   | 25h | ok  |  3.29 | 10.78 Watts
+CPU1 P1V8 POUT   | 26h | ok  |  3.32 | 6.99 Watts
+CPU1 P3V3 POUT   | 27h | ok  |  3.30 | 0 Watts
+CPU1 VCORE0 POUT | 28h | ok  |  3.26 | 0 Watts
+CPU1 VCORE1 POUT | 29h | ok  |  3.28 | 0 Watts
+CPU1 VDDIO POUT  | 2Ah | ok  |  3.31 | 18.04 Watts
+CPU1 VSOC POUT   | 2Bh | ok  |  3.27 | 52.26 Watts
+HOTSWAP PIN      | 2Ch | ok  | 14.5 | 413 Watts
+
+
+All EEPROMS
+FRU Device Description : Builtin FRU Device (ID 0)
+ Device not present (Requested sensor, data, or record not found)
+
+FRU Device Description : Astoria MB (ID 20)
+ Board Mfg Date        : Wed Aug  9 16:55:00 2017
+ Board Mfg             : Foxconn
+ Board Product         : Astoria MB
+ Board Serial          : ASTFWI210000000
+ Board Part Number     : 1117363-02
+
+FRU Device Description : Agora V2AH (ID 31)
+ Board Mfg Date        : Tue Jan  2 13:45:00 2024
+ Board Mfg             : Foxconn
+ Board Product         : Agora V2AH
+ Board Serial          : AAHFWI221200035
+ Board Part Number     : 1119041-02
+
+FRU Device Description : warthog_3 (ID 38)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709120
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : warthog_2 (ID 92)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709110
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : warthog_4 (ID 97)
+ Board Mfg Date        : Thu Jul  8 14:17:00 2021
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709116
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : Granite HalfDome (ID 153)
+ Board Mfg Date        : Tue Apr 27 09:17:00 2021
+ Board Mfg             : Celestica
+ Board Product         : Granite HalfDome
+ Board Serial          : PNGCTH211724127
+ Board Part Number     : 42000839-12
+
+FRU Device Description : SuperBigGulp (ID 198)
+ Board Mfg Date        : Wed Jan 19 13:14:00 2022
+ Board Mfg             : Quanta
+ Board Product         : SuperBigGulp
+ Board Serial          : IPB220400072
+ Board Part Number     : 1088368-07
+ Board Extra           : Power Capacity:1500W
+
+FRU Device Description : warthog_1 (ID 207)
+ Board Mfg Date        : Thu Jul  8 14:19:00 2021
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709121
+ Board Part Number     : KW049419-93404
+
+
+
+Any USB conections
+/:  Bus 04.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M
+/:  Bus 03.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 480M
+    |__ Port 2: Dev 8, If 0, Class=Hub, Driver=hub/7p, 480M
+        |__ Port 1: Dev 9, If 0, Class=Communications, Driver=cdc_eem, 480M
+/:  Bus 02.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 10000M
+/:  Bus 01.Port 1: Dev 1, Class=root_hub, Driver=xhci_hcd/2p, 480M
+
+
+---------------------------------Other-----------------------------------------
+
+All fan speeds
+
+
+--------------------------Boot device (cSSD)-----------------------------------
+
+Connection speed
+SATA Version is:  SATA 3.2, 6.0 Gb/s (current: 6.0 Gb/s)
+
+
+Device size
+Sector Size:      512 bytes logical/physical
+
+
+Device mfr or part number
+Serial Number:    DSPKTC211919722
+
+
+Firmware version
+Firmware Version: S0124AST
+
+---------------------------------End-------------------------------------------

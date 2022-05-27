@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.8.10 on linux)" generated="20220527 17:38:31.929" rpa="false" schemaversion="3">
+<suite id="s1" name="autoTest" source="/home/wuling/yoyoScpFile/simple_test/autoTest.robot">
+<test id="s1-t1" name="Run BMC" line="5">
+<kw name="Copy Scripts to BMC" library="service">
+<kw name="Set Variable" library="BuiltIn">
+<var>@{ScriptsList}</var>
+<arg>${SDRINFO}</arg>
+<arg>${THRESHOLD}</arg>
+<arg>${HEXDUMP}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220527 17:38:37.028" level="INFO">@{ScriptsList} = [ sdrinfo | threshold | hexdump ]</msg>
+<status status="PASS" starttime="20220527 17:38:37.027" endtime="20220527 17:38:37.028"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<status status="PASS" starttime="20220527 17:38:37.028" endtime="20220527 17:38:37.381"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.028" endtime="20220527 17:38:37.381"/>
+</kw>
+<for flavor="IN">
+<var>${ScriptName}</var>
+<value>@{ScriptsList}</value>
+<iter>
+<var name="${ScriptName}">sdrinfo</var>
+<kw name="Put File" library="scp">
+<arg>${SCRIPTS_PATH}/${ScriptName}.sh</arg>
+<arg>${bmc_dst_path}/</arg>
+<doc>Uploads a file to the remote machine from the local machine.</doc>
+<status status="PASS" starttime="20220527 17:38:37.382" endtime="20220527 17:38:37.440"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.382" endtime="20220527 17:38:37.440"/>
+</iter>
+<iter>
+<var name="${ScriptName}">threshold</var>
+<kw name="Put File" library="scp">
+<arg>${SCRIPTS_PATH}/${ScriptName}.sh</arg>
+<arg>${bmc_dst_path}/</arg>
+<doc>Uploads a file to the remote machine from the local machine.</doc>
+<status status="PASS" starttime="20220527 17:38:37.441" endtime="20220527 17:38:37.530"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.440" endtime="20220527 17:38:37.530"/>
+</iter>
+<iter>
+<var name="${ScriptName}">hexdump</var>
+<kw name="Put File" library="scp">
+<arg>${SCRIPTS_PATH}/${ScriptName}.sh</arg>
+<arg>${bmc_dst_path}/</arg>
+<doc>Uploads a file to the remote machine from the local machine.</doc>
+<status status="PASS" starttime="20220527 17:38:37.531" endtime="20220527 17:38:37.603"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.531" endtime="20220527 17:38:37.604"/>
+</iter>
+<status status="PASS" starttime="20220527 17:38:37.382" endtime="20220527 17:38:37.604"/>
+</for>
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:38:37.604" endtime="20220527 17:38:37.605"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.027" endtime="20220527 17:38:37.605"/>
+</kw>
+<kw name="Execute scripts on BMC" library="service">
+<kw name="Set Variable" library="BuiltIn">
+<var>@{ScriptsList}</var>
+<arg>${SDRINFO}</arg>
+<arg>${THRESHOLD}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220527 17:38:37.607" level="INFO">@{ScriptsList} = [ sdrinfo | threshold ]</msg>
+<status status="PASS" starttime="20220527 17:38:37.607" endtime="20220527 17:38:37.608"/>
+</kw>
+<kw name="SSH Login to BMC" library="commons">
+<kw name="Open Connection" library="ssh">
+<arg>${BMC_HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" starttime="20220527 17:38:37.609" endtime="20220527 17:38:37.610"/>
+</kw>
+<kw name="Login" library="ssh">
+<arg>${BMC_USER}</arg>
+<arg>${BMC_PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<msg timestamp="20220527 17:38:37.611" level="INFO">Logging into '192.169.100.19:22' as 'root'.</msg>
+<msg timestamp="20220527 17:38:38.985" level="INFO">Read output: root@roux:~#</msg>
+<status status="PASS" starttime="20220527 17:38:37.610" endtime="20220527 17:38:38.986"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.608" endtime="20220527 17:38:38.986"/>
+</kw>
+<kw name="Execute multiple scripts" library="commons">
+<arg>@{ScriptsList}</arg>
+<arg>scripts_path=${bmc_dst_path}</arg>
+<for flavor="IN">
+<var>${script_name}</var>
+<value>@{scripts_list}</value>
+<iter>
+<var name="${script_name}">sdrinfo</var>
+<kw name="Execute script" library="commons">
+<arg>${script_name}</arg>
+<arg>${scripts_path}</arg>
+<if>
+<branch type="IF" condition="${is_format}">
+<kw name="Execute Command" library="ssh">
+<arg>sed -i "s/\r//" ${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:38:38.991" endtime="20220527 17:38:38.991"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:38:38.990" endtime="20220527 17:38:38.991"/>
+</branch>
+<status status="PASS" starttime="20220527 17:38:38.990" endtime="20220527 17:38:38.991"/>
+</if>
+<kw name="Write" library="ssh">
+<arg>${CHMOD_CMD} ${script_path}/${script_name}.sh</arg>
+<doc>Writes the given ``text`` on the remote machine and appends a newline.</doc>
+<msg timestamp="20220527 17:38:38.999" level="INFO">chmod +x /home/root/sdrinfo.sh</msg>
+<status status="PASS" starttime="20220527 17:38:38.991" endtime="20220527 17:38:38.999"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_output}">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh &gt; ${script_path}/${script_name}.txt</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:38:39.000" level="INFO">Executing command '/home/root/sdrinfo.sh &gt; /home/root/sdrinfo.txt'.</msg>
+<msg timestamp="20220527 17:49:04.645" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:38:38.999" endtime="20220527 17:49:04.645"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:38.999" endtime="20220527 17:49:04.645"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:49:04.646" endtime="20220527 17:49:04.646"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:49:04.645" endtime="20220527 17:49:04.646"/>
+</branch>
+<status status="PASS" starttime="20220527 17:38:38.999" endtime="20220527 17:49:04.646"/>
+</if>
+<status status="PASS" starttime="20220527 17:38:38.989" endtime="20220527 17:49:04.646"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:38.989" endtime="20220527 17:49:04.646"/>
+</iter>
+<iter>
+<var name="${script_name}">threshold</var>
+<kw name="Execute script" library="commons">
+<arg>${script_name}</arg>
+<arg>${scripts_path}</arg>
+<if>
+<branch type="IF" condition="${is_format}">
+<kw name="Execute Command" library="ssh">
+<arg>sed -i "s/\r//" ${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:49:04.648" endtime="20220527 17:49:04.649"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:49:04.648" endtime="20220527 17:49:04.649"/>
+</branch>
+<status status="PASS" starttime="20220527 17:49:04.648" endtime="20220527 17:49:04.649"/>
+</if>
+<kw name="Write" library="ssh">
+<arg>${CHMOD_CMD} ${script_path}/${script_name}.sh</arg>
+<doc>Writes the given ``text`` on the remote machine and appends a newline.</doc>
+<msg timestamp="20220527 17:49:04.688" level="INFO">root@roux:~# chmod +x /home/root/threshold.sh</msg>
+<status status="PASS" starttime="20220527 17:49:04.649" endtime="20220527 17:49:04.688"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_output}">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh &gt; ${script_path}/${script_name}.txt</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:49:04.689" level="INFO">Executing command '/home/root/threshold.sh &gt; /home/root/threshold.txt'.</msg>
+<msg timestamp="20220527 17:54:50.452" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:49:04.689" endtime="20220527 17:54:50.453"/>
+</kw>
+<status status="PASS" starttime="20220527 17:49:04.689" endtime="20220527 17:54:50.453"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:54:50.454" endtime="20220527 17:54:50.454"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:54:50.453" endtime="20220527 17:54:50.454"/>
+</branch>
+<status status="PASS" starttime="20220527 17:49:04.688" endtime="20220527 17:54:50.454"/>
+</if>
+<status status="PASS" starttime="20220527 17:49:04.647" endtime="20220527 17:54:50.455"/>
+</kw>
+<status status="PASS" starttime="20220527 17:49:04.646" endtime="20220527 17:54:50.455"/>
+</iter>
+<status status="PASS" starttime="20220527 17:38:38.988" endtime="20220527 17:54:50.455"/>
+</for>
+<status status="PASS" starttime="20220527 17:38:38.987" endtime="20220527 17:54:50.455"/>
+</kw>
+<kw name="Execute script" library="commons">
+<arg>${HEXDUMP}</arg>
+<arg>${bmc_dst_path}</arg>
+<arg>is_output=${False}</arg>
+<arg>is_format=${True}</arg>
+<if>
+<branch type="IF" condition="${is_format}">
+<kw name="Execute Command" library="ssh">
+<arg>sed -i "s/\r//" ${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:54:50.458" level="INFO">Executing command 'sed -i "s///" /home/root/hexdump.sh'.</msg>
+<msg timestamp="20220527 17:54:50.493" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:54:50.457" endtime="20220527 17:54:50.494"/>
+</kw>
+<status status="PASS" starttime="20220527 17:54:50.457" endtime="20220527 17:54:50.494"/>
+</branch>
+<status status="PASS" starttime="20220527 17:54:50.457" endtime="20220527 17:54:50.494"/>
+</if>
+<kw name="Write" library="ssh">
+<arg>${CHMOD_CMD} ${script_path}/${script_name}.sh</arg>
+<doc>Writes the given ``text`` on the remote machine and appends a newline.</doc>
+<msg timestamp="20220527 17:54:50.499" level="INFO">root@roux:~# chmod +x /home/root/hexdump.sh</msg>
+<status status="PASS" starttime="20220527 17:54:50.495" endtime="20220527 17:54:50.499"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_output}">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh &gt; ${script_path}/${script_name}.txt</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:54:50.499" endtime="20220527 17:54:50.500"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:54:50.499" endtime="20220527 17:54:50.500"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:54:50.501" level="INFO">Executing command '/home/root/hexdump.sh'.</msg>
+<msg timestamp="20220527 17:54:54.805" level="INFO">Command exited with return code 1.</msg>
+<status status="PASS" starttime="20220527 17:54:50.500" endtime="20220527 17:54:54.805"/>
+</kw>
+<status status="PASS" starttime="20220527 17:54:50.500" endtime="20220527 17:54:54.805"/>
+</branch>
+<status status="PASS" starttime="20220527 17:54:50.499" endtime="20220527 17:54:54.805"/>
+</if>
+<status status="PASS" starttime="20220527 17:54:50.455" endtime="20220527 17:54:54.806"/>
+</kw>
+<kw name="Execute Command" library="ssh">
+<arg>ipmitool sensor list all &gt; ${bmc_dst_path}/${SENSOR_LIST_TXT}</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:54:54.807" level="INFO">Executing command 'ipmitool sensor list all &gt; /home/root/sensorlistall.txt'.</msg>
+<msg timestamp="20220527 17:55:00.097" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:54:54.806" endtime="20220527 17:55:00.097"/>
+</kw>
+<kw name="Close Connection" library="ssh">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20220527 17:55:00.098" endtime="20220527 17:55:00.098"/>
+</kw>
+<status status="PASS" starttime="20220527 17:38:37.606" endtime="20220527 17:55:00.099"/>
+</kw>
+<kw name="Get result from BMC" library="service">
+<kw name="Set Variable" library="BuiltIn">
+<var>@{FilesList}</var>
+<arg>${SDRINFO}.txt</arg>
+<arg>${THRESHOLD}.txt</arg>
+<arg>${HEXDUMP}result</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<msg timestamp="20220527 17:55:00.102" level="INFO">@{FilesList} = [ sdrinfo.txt | threshold.txt | hexdumpresult ]</msg>
+<status status="PASS" starttime="20220527 17:55:00.101" endtime="20220527 17:55:00.102"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<status status="PASS" starttime="20220527 17:55:00.103" endtime="20220527 17:55:00.497"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.102" endtime="20220527 17:55:00.497"/>
+</kw>
+<for flavor="IN">
+<var>${File}</var>
+<value>@{FilesList}</value>
+<iter>
+<var name="${File}">sdrinfo.txt</var>
+<kw name="Get File" library="scp">
+<arg>${bmc_dst_path}/${File}</arg>
+<arg>${RESULT_PATH}</arg>
+<doc>Downloads a file from the remote machine to the local machine.</doc>
+<status status="PASS" starttime="20220527 17:55:00.498" endtime="20220527 17:55:00.531"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.498" endtime="20220527 17:55:00.532"/>
+</iter>
+<iter>
+<var name="${File}">threshold.txt</var>
+<kw name="Get File" library="scp">
+<arg>${bmc_dst_path}/${File}</arg>
+<arg>${RESULT_PATH}</arg>
+<doc>Downloads a file from the remote machine to the local machine.</doc>
+<status status="PASS" starttime="20220527 17:55:00.532" endtime="20220527 17:55:00.569"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.532" endtime="20220527 17:55:00.569"/>
+</iter>
+<iter>
+<var name="${File}">hexdumpresult</var>
+<kw name="Get File" library="scp">
+<arg>${bmc_dst_path}/${File}</arg>
+<arg>${RESULT_PATH}</arg>
+<doc>Downloads a file from the remote machine to the local machine.</doc>
+<status status="PASS" starttime="20220527 17:55:00.570" endtime="20220527 17:55:00.597"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.570" endtime="20220527 17:55:00.597"/>
+</iter>
+<status status="PASS" starttime="20220527 17:55:00.497" endtime="20220527 17:55:00.598"/>
+</for>
+<kw name="Get File" library="scp">
+<arg>${bmc_dst_path}/${SENSOR_LIST_TXT}</arg>
+<arg>${PYTHONS_PATH}</arg>
+<doc>Downloads a file from the remote machine to the local machine.</doc>
+<status status="PASS" starttime="20220527 17:55:00.598" endtime="20220527 17:55:00.670"/>
+</kw>
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:55:00.670" endtime="20220527 17:55:00.671"/>
+</kw>
+<kw name="BMC Execute Command" library="commons">
+<arg>rm *</arg>
+<kw name="SSH Login to BMC" library="commons">
+<kw name="Open Connection" library="ssh">
+<arg>${BMC_HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" starttime="20220527 17:55:00.673" endtime="20220527 17:55:00.674"/>
+</kw>
+<kw name="Login" library="ssh">
+<arg>${BMC_USER}</arg>
+<arg>${BMC_PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<msg timestamp="20220527 17:55:00.674" level="INFO">Logging into '192.169.100.19:22' as 'root'.</msg>
+<msg timestamp="20220527 17:55:02.033" level="INFO">Read output: root@roux:~#</msg>
+<status status="PASS" starttime="20220527 17:55:00.674" endtime="20220527 17:55:02.033"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.672" endtime="20220527 17:55:02.034"/>
+</kw>
+<kw name="Execute Command" library="ssh">
+<arg>${command}</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:55:02.035" level="INFO">Executing command 'rm *'.</msg>
+<msg timestamp="20220527 17:55:02.775" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:55:02.034" endtime="20220527 17:55:02.776"/>
+</kw>
+<kw name="Close Connection" library="ssh">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20220527 17:55:02.776" endtime="20220527 17:55:02.777"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.671" endtime="20220527 17:55:02.778"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:00.099" endtime="20220527 17:55:02.778"/>
+</kw>
+<kw name="SDR Auto Test" library="service">
+<kw name="SdrTable Mapping" library="sdrMapping">
+<status status="PASS" starttime="20220527 17:55:02.779" endtime="20220527 17:55:02.801"/>
+</kw>
+<kw name="Sdr Input Xlsx" library="sdrAutoInput">
+<status status="PASS" starttime="20220527 17:55:02.801" endtime="20220527 17:55:06.777"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:02.778" endtime="20220527 17:55:06.777"/>
+</kw>
+<kw name="Close SCP and SSH" library="commons" type="TEARDOWN">
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:55:06.778" endtime="20220527 17:55:06.779"/>
+</kw>
+<kw name="Close All Connections" library="ssh">
+<doc>Closes all open connections.</doc>
+<status status="PASS" starttime="20220527 17:55:06.779" endtime="20220527 17:55:06.779"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:06.778" endtime="20220527 17:55:06.779"/>
+</kw>
+<tag>Run_BMC</tag>
+<status status="PASS" starttime="20220527 17:38:37.026" endtime="20220527 17:55:06.779"/>
+</test>
+<test id="s1-t2" name="Run OVSS" line="12">
+<kw name="Copy Scripts to OS" library="service">
+<kw name="SCP Open to OS" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${OS_HOST}</arg>
+<arg>username=${OS_USER}</arg>
+<arg>password=${OS_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<status status="PASS" starttime="20220527 17:55:06.782" endtime="20220527 17:55:06.843"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:06.781" endtime="20220527 17:55:06.844"/>
+</kw>
+<kw name="Put File" library="scp">
+<arg>${SCRIPTS_PATH}/${Configcheck}.sh</arg>
+<arg>${os_dst_path}/</arg>
+<doc>Uploads a file to the remote machine from the local machine.</doc>
+<status status="PASS" starttime="20220527 17:55:06.844" endtime="20220527 17:55:07.246"/>
+</kw>
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:55:07.246" endtime="20220527 17:55:07.247"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:06.781" endtime="20220527 17:55:07.247"/>
+</kw>
+<kw name="Execute scripts on OS" library="service">
+<kw name="SSH Login to OS" library="commons">
+<kw name="Open Connection" library="ssh">
+<arg>${OS_HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" starttime="20220527 17:55:07.249" endtime="20220527 17:55:07.250"/>
+</kw>
+<kw name="Login" library="ssh">
+<arg>${OS_USER}</arg>
+<arg>${OS_PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<msg timestamp="20220527 17:55:07.251" level="INFO">Logging into '192.169.100.11:22' as 'root'.</msg>
+<msg timestamp="20220527 17:55:08.562" level="INFO">Read output: Last login: Wed Nov  4 13:34:21 2020 from 192.169.100.27
+root@localhost:~#</msg>
+<status status="PASS" starttime="20220527 17:55:07.250" endtime="20220527 17:55:08.563"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:07.248" endtime="20220527 17:55:08.563"/>
+</kw>
+<kw name="Execute script" library="commons">
+<arg>${Configcheck}</arg>
+<arg>${os_dst_path}</arg>
+<if>
+<branch type="IF" condition="${is_format}">
+<kw name="Execute Command" library="ssh">
+<arg>sed -i "s/\r//" ${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:55:08.566" endtime="20220527 17:55:08.566"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:55:08.566" endtime="20220527 17:55:08.566"/>
+</branch>
+<status status="PASS" starttime="20220527 17:55:08.565" endtime="20220527 17:55:08.566"/>
+</if>
+<kw name="Write" library="ssh">
+<arg>${CHMOD_CMD} ${script_path}/${script_name}.sh</arg>
+<doc>Writes the given ``text`` on the remote machine and appends a newline.</doc>
+<msg timestamp="20220527 17:55:08.570" level="INFO">chmod +x /tmp/OVSS_Configcheck.sh</msg>
+<status status="PASS" starttime="20220527 17:55:08.567" endtime="20220527 17:55:08.570"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_output}">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh &gt; ${script_path}/${script_name}.txt</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:55:08.571" level="INFO">Executing command '/tmp/OVSS_Configcheck.sh &gt; /tmp/OVSS_Configcheck.txt'.</msg>
+<msg timestamp="20220527 17:57:06.070" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:55:08.570" endtime="20220527 17:57:06.070"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:08.570" endtime="20220527 17:57:06.070"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:57:06.071" endtime="20220527 17:57:06.071"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:57:06.070" endtime="20220527 17:57:06.071"/>
+</branch>
+<status status="PASS" starttime="20220527 17:55:08.570" endtime="20220527 17:57:06.071"/>
+</if>
+<status status="PASS" starttime="20220527 17:55:08.564" endtime="20220527 17:57:06.071"/>
+</kw>
+<kw name="Close Connection" library="ssh">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20220527 17:57:06.072" endtime="20220527 17:57:06.073"/>
+</kw>
+<status status="PASS" starttime="20220527 17:55:07.248" endtime="20220527 17:57:06.073"/>
+</kw>
+<kw name="Get result from OS" library="service">
+<kw name="SCP Open to OS" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${OS_HOST}</arg>
+<arg>username=${OS_USER}</arg>
+<arg>password=${OS_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<status status="PASS" starttime="20220527 17:57:06.075" endtime="20220527 17:57:06.246"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:06.074" endtime="20220527 17:57:06.246"/>
+</kw>
+<kw name="Get File" library="scp">
+<arg>${os_dst_path}/${Configcheck}.txt</arg>
+<arg>${RESULT_PATH}</arg>
+<doc>Downloads a file from the remote machine to the local machine.</doc>
+<status status="PASS" starttime="20220527 17:57:06.247" endtime="20220527 17:57:06.422"/>
+</kw>
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:57:06.423" endtime="20220527 17:57:06.424"/>
+</kw>
+<kw name="OS Execute Command" library="commons">
+<arg>rm ${os_dst_path}/*</arg>
+<kw name="SSH Login to OS" library="commons">
+<kw name="Open Connection" library="ssh">
+<arg>${OS_HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" starttime="20220527 17:57:06.425" endtime="20220527 17:57:06.426"/>
+</kw>
+<kw name="Login" library="ssh">
+<arg>${OS_USER}</arg>
+<arg>${OS_PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<msg timestamp="20220527 17:57:06.427" level="INFO">Logging into '192.169.100.11:22' as 'root'.</msg>
+<msg timestamp="20220527 17:57:07.770" level="INFO">Read output: Last login: Wed Nov  4 13:40:19 2020 from 192.169.100.27
+root@localhost:~#</msg>
+<status status="PASS" starttime="20220527 17:57:06.426" endtime="20220527 17:57:07.771"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:06.425" endtime="20220527 17:57:07.771"/>
+</kw>
+<kw name="Execute Command" library="ssh">
+<arg>${command}</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:57:07.773" level="INFO">Executing command 'rm /tmp/*'.</msg>
+<msg timestamp="20220527 17:57:07.787" level="INFO">Command exited with return code 1.</msg>
+<status status="PASS" starttime="20220527 17:57:07.772" endtime="20220527 17:57:07.788"/>
+</kw>
+<kw name="Close Connection" library="ssh">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20220527 17:57:07.788" endtime="20220527 17:57:07.789"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:06.424" endtime="20220527 17:57:07.789"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:06.074" endtime="20220527 17:57:07.790"/>
+</kw>
+<kw name="Close SCP and SSH" library="commons" type="TEARDOWN">
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:57:07.791" endtime="20220527 17:57:07.792"/>
+</kw>
+<kw name="Close All Connections" library="ssh">
+<doc>Closes all open connections.</doc>
+<status status="PASS" starttime="20220527 17:57:07.792" endtime="20220527 17:57:07.792"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:07.791" endtime="20220527 17:57:07.793"/>
+</kw>
+<tag>Run_OVSS</tag>
+<status status="PASS" starttime="20220527 17:55:06.780" endtime="20220527 17:57:07.793"/>
+</test>
+<test id="s1-t3" name="Run Redfish" line="18">
+<kw name="Redfish Auto" library="service">
+<kw name="Replace Ip" library="redfishAuto">
+<status status="PASS" starttime="20220527 17:57:07.796" endtime="20220527 17:57:07.797"/>
+</kw>
+<kw name="Run Redfish Script" library="redfishAuto">
+<status status="PASS" starttime="20220527 17:57:07.798" endtime="20220527 17:57:27.205"/>
+</kw>
+<kw name="Redfish Input" library="redfishAuto">
+<status status="PASS" starttime="20220527 17:57:27.206" endtime="20220527 17:57:35.307"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:07.795" endtime="20220527 17:57:35.308"/>
+</kw>
+<kw name="Close SCP and SSH" library="commons" type="TEARDOWN">
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:57:35.309" endtime="20220527 17:57:35.309"/>
+</kw>
+<kw name="Close All Connections" library="ssh">
+<doc>Closes all open connections.</doc>
+<status status="PASS" starttime="20220527 17:57:35.310" endtime="20220527 17:57:35.310"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:35.308" endtime="20220527 17:57:35.310"/>
+</kw>
+<tag>Run_Redfish</tag>
+<status status="PASS" starttime="20220527 17:57:07.794" endtime="20220527 17:57:35.310"/>
+</test>
+<test id="s1-t4" name="Run IPMI" line="22">
+<kw name="Get IPMI result" library="service">
+<kw name="Wait Until Keyword Succeeds" library="BuiltIn">
+<arg>7 min</arg>
+<arg>10 sec</arg>
+<arg>SCP Open to BMC</arg>
+<doc>Runs the specified keyword and retries if it fails.</doc>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<msg timestamp="20220527 17:57:35.316" level="FAIL">NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.169.100.19</msg>
+<status status="FAIL" starttime="20220527 17:57:35.313" endtime="20220527 17:57:35.338"/>
+</kw>
+<status status="FAIL" starttime="20220527 17:57:35.312" endtime="20220527 17:57:35.339"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<msg timestamp="20220527 17:58:03.777" level="FAIL">NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.169.100.19</msg>
+<status status="FAIL" starttime="20220527 17:57:45.341" endtime="20220527 17:58:03.778"/>
+</kw>
+<status status="FAIL" starttime="20220527 17:57:45.340" endtime="20220527 17:58:03.780"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<msg timestamp="20220527 17:58:16.833" level="FAIL">NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.169.100.19</msg>
+<status status="FAIL" starttime="20220527 17:58:13.782" endtime="20220527 17:58:16.834"/>
+</kw>
+<status status="FAIL" starttime="20220527 17:58:13.781" endtime="20220527 17:58:16.836"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<msg timestamp="20220527 17:58:29.921" level="FAIL">NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.169.100.19</msg>
+<status status="FAIL" starttime="20220527 17:58:26.839" endtime="20220527 17:58:29.922"/>
+</kw>
+<status status="FAIL" starttime="20220527 17:58:26.837" endtime="20220527 17:58:29.924"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<msg timestamp="20220527 17:58:42.977" level="FAIL">NoValidConnectionsError: [Errno None] Unable to connect to port 22 on 192.169.100.19</msg>
+<status status="FAIL" starttime="20220527 17:58:39.926" endtime="20220527 17:58:42.978"/>
+</kw>
+<status status="FAIL" starttime="20220527 17:58:39.925" endtime="20220527 17:58:42.980"/>
+</kw>
+<kw name="SCP Open to BMC" library="commons">
+<kw name="Open Connection" library="scp">
+<arg>${BMC_HOST}</arg>
+<arg>username=${BMC_USER}</arg>
+<arg>password=${BMC_PASSWORD}</arg>
+<doc>Opens a new SCP connection to the given host.</doc>
+<status status="PASS" starttime="20220527 17:58:52.982" endtime="20220527 17:58:54.420"/>
+</kw>
+<status status="PASS" starttime="20220527 17:58:52.981" endtime="20220527 17:58:54.421"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:35.312" endtime="20220527 17:58:54.421"/>
+</kw>
+<kw name="Put File" library="scp">
+<arg>${SCRIPTS_PATH}/${IPMI_CMDS}.sh</arg>
+<arg>${bmc_dst_path}/</arg>
+<doc>Uploads a file to the remote machine from the local machine.</doc>
+<status status="PASS" starttime="20220527 17:58:54.421" endtime="20220527 17:58:54.497"/>
+</kw>
+<kw name="SSH Login to BMC" library="commons">
+<kw name="Open Connection" library="ssh">
+<arg>${BMC_HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" starttime="20220527 17:58:54.499" endtime="20220527 17:58:54.500"/>
+</kw>
+<kw name="Login" library="ssh">
+<arg>${BMC_USER}</arg>
+<arg>${BMC_PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<msg timestamp="20220527 17:58:54.501" level="INFO">Logging into '192.169.100.19:22' as 'root'.</msg>
+<msg timestamp="20220527 17:58:56.263" level="INFO">Read output: root@roux:~#</msg>
+<status status="PASS" starttime="20220527 17:58:54.500" endtime="20220527 17:58:56.264"/>
+</kw>
+<status status="PASS" starttime="20220527 17:58:54.498" endtime="20220527 17:58:56.264"/>
+</kw>
+<kw name="Execute script" library="commons">
+<arg>${IPMI_CMDS}</arg>
+<arg>${bmc_dst_path}</arg>
+<if>
+<branch type="IF" condition="${is_format}">
+<kw name="Execute Command" library="ssh">
+<arg>sed -i "s/\r//" ${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:58:56.267" endtime="20220527 17:58:56.267"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:58:56.267" endtime="20220527 17:58:56.267"/>
+</branch>
+<status status="PASS" starttime="20220527 17:58:56.266" endtime="20220527 17:58:56.267"/>
+</if>
+<kw name="Write" library="ssh">
+<arg>${CHMOD_CMD} ${script_path}/${script_name}.sh</arg>
+<doc>Writes the given ``text`` on the remote machine and appends a newline.</doc>
+<msg timestamp="20220527 17:58:56.275" level="INFO">chmod +x /home/root/IPMI_Cmds.sh</msg>
+<status status="PASS" starttime="20220527 17:58:56.267" endtime="20220527 17:58:56.275"/>
+</kw>
+<if>
+<branch type="IF" condition="${is_output}">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh &gt; ${script_path}/${script_name}.txt</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:58:56.276" level="INFO">Executing command '/home/root/IPMI_Cmds.sh &gt; /home/root/IPMI_Cmds.txt'.</msg>
+<msg timestamp="20220527 17:59:42.494" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:58:56.275" endtime="20220527 17:59:42.494"/>
+</kw>
+<status status="PASS" starttime="20220527 17:58:56.275" endtime="20220527 17:59:42.494"/>
+</branch>
+<branch type="ELSE">
+<kw name="Execute Command" library="ssh">
+<arg>${script_path}/${script_name}.sh</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<status status="NOT RUN" starttime="20220527 17:59:42.495" endtime="20220527 17:59:42.495"/>
+</kw>
+<status status="NOT RUN" starttime="20220527 17:59:42.494" endtime="20220527 17:59:42.495"/>
+</branch>
+<status status="PASS" starttime="20220527 17:58:56.275" endtime="20220527 17:59:42.495"/>
+</if>
+<status status="PASS" starttime="20220527 17:58:56.265" endtime="20220527 17:59:42.496"/>
+</kw>
+<kw name="Get File" library="scp">
+<arg>${bmc_dst_path}/${IPMI_CMDS}.txt</arg>
+<arg>${RESULT_PATH}</arg>
+<doc>Downloads a file from the remote machine to the local machine.</doc>
+<status status="PASS" starttime="20220527 17:59:42.496" endtime="20220527 17:59:42.527"/>
+</kw>
+<kw name="BMC Execute Command" library="commons">
+<arg>rm *</arg>
+<kw name="SSH Login to BMC" library="commons">
+<kw name="Open Connection" library="ssh">
+<arg>${BMC_HOST}</arg>
+<doc>Opens a new SSH connection to the given ``host`` and ``port``.</doc>
+<status status="PASS" starttime="20220527 17:59:42.529" endtime="20220527 17:59:42.529"/>
+</kw>
+<kw name="Login" library="ssh">
+<arg>${BMC_USER}</arg>
+<arg>${BMC_PASSWORD}</arg>
+<doc>Logs into the SSH server with the given ``username`` and ``password``.</doc>
+<msg timestamp="20220527 17:59:42.530" level="INFO">Logging into '192.169.100.19:22' as 'root'.</msg>
+<msg timestamp="20220527 17:59:43.891" level="INFO">Read output: root@roux:~#</msg>
+<status status="PASS" starttime="20220527 17:59:42.529" endtime="20220527 17:59:43.892"/>
+</kw>
+<status status="PASS" starttime="20220527 17:59:42.528" endtime="20220527 17:59:43.892"/>
+</kw>
+<kw name="Execute Command" library="ssh">
+<arg>${command}</arg>
+<doc>Executes ``command`` on the remote machine and returns its outputs.</doc>
+<msg timestamp="20220527 17:59:43.893" level="INFO">Executing command 'rm *'.</msg>
+<msg timestamp="20220527 17:59:43.919" level="INFO">Command exited with return code 0.</msg>
+<status status="PASS" starttime="20220527 17:59:43.893" endtime="20220527 17:59:43.920"/>
+</kw>
+<kw name="Close Connection" library="ssh">
+<doc>Closes the current connection.</doc>
+<status status="PASS" starttime="20220527 17:59:43.920" endtime="20220527 17:59:43.921"/>
+</kw>
+<status status="PASS" starttime="20220527 17:59:42.527" endtime="20220527 17:59:43.921"/>
+</kw>
+<kw name="Close SCP and SSH" library="commons">
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:59:43.922" endtime="20220527 17:59:43.923"/>
+</kw>
+<kw name="Close All Connections" library="ssh">
+<doc>Closes all open connections.</doc>
+<status status="PASS" starttime="20220527 17:59:43.923" endtime="20220527 17:59:43.924"/>
+</kw>
+<status status="PASS" starttime="20220527 17:59:43.922" endtime="20220527 17:59:43.924"/>
+</kw>
+<status status="PASS" starttime="20220527 17:57:35.311" endtime="20220527 17:59:43.925"/>
+</kw>
+<kw name="Close SCP and SSH" library="commons" type="TEARDOWN">
+<kw name="Close Connection" library="scp">
+<doc>Closes the SCP connection.</doc>
+<status status="PASS" starttime="20220527 17:59:43.926" endtime="20220527 17:59:43.926"/>
+</kw>
+<kw name="Close All Connections" library="ssh">
+<doc>Closes all open connections.</doc>
+<status status="PASS" starttime="20220527 17:59:43.927" endtime="20220527 17:59:43.927"/>
+</kw>
+<status status="PASS" starttime="20220527 17:59:43.925" endtime="20220527 17:59:43.928"/>
+</kw>
+<tag>Run_IPMI</tag>
+<status status="PASS" starttime="20220527 17:57:35.311" endtime="20220527 17:59:43.928"/>
+</test>
+<status status="PASS" starttime="20220527 17:38:31.931" endtime="20220527 17:59:43.929"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+<stat pass="1" fail="0" skip="0">Run_BMC</stat>
+<stat pass="1" fail="0" skip="0">Run_IPMI</stat>
+<stat pass="1" fail="0" skip="0">Run_OVSS</stat>
+<stat pass="1" fail="0" skip="0">Run_Redfish</stat>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="autoTest">autoTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

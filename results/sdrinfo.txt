@@ -1,0 +1,1091 @@
+sensor ID is 00 
+BRICK1 P12V IOUT | 00h | ok  | 14.9 | 6.77 Amps
+CPU0 P1V8 POUT   | 1Fh | ok  |  3.25 | 8.00 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x00 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 09 
+sensor type is 03 
+reading type is 01 
+sensor ID is 01 
+BRICK2 P12V IOUT | 01h | ok  | 14.10 | 6.31 Amps
+BMC P1V0         | 63h | ok  | 16.3 | 1.01 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x01 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 0a 
+sensor type is 03 
+reading type is 01 
+sensor ID is 02 
+CPU0 P1V1 IOUT   | 02h | ok  |  3.54 | 6.94 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x02 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 36 
+sensor type is 03 
+reading type is 01 
+sensor ID is 03 
+CPU0 P1V8 IOUT   | 03h | ok  |  3.57 | 4.69 Amps
+BRICK1 P12V      | 69h | ok  | 14.3 | 12.03 Volts
+CPU0 VCORE0      | 6Fh | ok  |  3.1 | 1.03 Volts
+CPU0 VCORE1      | 70h | ok  |  3.3 | 1.03 Volts
+CPU1 VCORE0      | 77h | ok  |  3.9 | 1.03 Volts
+CPU1 VCORE1      | 78h | ok  |  3.11 | 1.03 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x03 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 39 
+sensor type is 03 
+reading type is 01 
+sensor ID is 04 
+CPU0 P3V3 IOUT   | 04h | ok  |  3.55 | 0 Amps
+CPU1 VDDIO POUT  | 2Ah | ok  |  3.31 | 18.04 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x04 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 37 
+sensor type is 03 
+reading type is 01 
+sensor ID is 05 
+CPU0 VCORE0 IOUT | 05h | ok  |  3.51 | 0 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x05 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 33 
+sensor type is 03 
+reading type is 01 
+sensor ID is 06 
+CPU0 VCORE1 IOUT | 06h | ok  |  3.53 | 0 Amps
+CPU0 VDDIO POUT  | 23h | ok  |  3.24 | 27.06 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x06 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 35 
+sensor type is 03 
+reading type is 01 
+sensor ID is 07 
+CPU0 VDDIO IOUT  | 07h | ok  |  3.56 | 24.15 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x07 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 38 
+sensor type is 03 
+reading type is 01 
+sensor ID is 08 
+CPU0 VSOC IOUT   | 08h | ok  |  3.52 | 48.10 Amps
+CPU0 P1V1 POUT   | 1Eh | ok  |  3.22 | 8.08 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x08 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 34 
+sensor type is 03 
+reading type is 01 
+sensor ID is 09 
+CPU1 P1V1 IOUT   | 09h | ok  |  3.61 | 9.79 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x09 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 3d 
+sensor type is 03 
+reading type is 01 
+sensor ID is 0A 
+CPU1 P1V8 IOUT   | 0Ah | ok  |  3.64 | 3.48 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x0A 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 40 
+sensor type is 03 
+reading type is 01 
+sensor ID is 0B 
+CPU1 P3V3 IOUT   | 0Bh | ok  |  3.62 | 0 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x0B 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 3e 
+sensor type is 03 
+reading type is 01 
+sensor ID is 0C 
+CPU1 VCORE0 IOUT | 0Ch | ok  |  3.58 | 0 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x0C 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 3a 
+sensor type is 03 
+reading type is 01 
+sensor ID is 0D 
+CPU1 VCORE1 IOUT | 0Dh | ok  |  3.60 | 0 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x0D 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 3c 
+sensor type is 03 
+reading type is 01 
+sensor ID is 0E 
+CPU1 VDDIO IOUT  | 0Eh | ok  |  3.63 | 16.56 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x0E 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 3f 
+sensor type is 03 
+reading type is 01 
+sensor ID is 0F 
+CPU1 VSOC IOUT   | 0Fh | ok  |  3.59 | 44.20 Amps
+ipmitool raw 0x04 0x21 0x00 0x00 0x0F 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 3b 
+sensor type is 03 
+reading type is 01 
+sensor ID is 10 
+BRICK2 P12V IOUT | 01h | ok  | 14.10 | 6.31 Amps
+CPU0 VSOC IOUT   | 08h | ok  |  3.52 | 48.10 Amps
+MAIN P3V3 IOUT   | 10h | ok  |  7.8 | 0 Amps
+CPU1 P1V1 POUT   | 25h | ok  |  3.29 | 10.78 Watts
+DIMM9 T          | 4Eh | ns  |  8.10 | No Reading
+DIMM10 T         | 4Fh | ns  |  8.11 | No Reading
+BRICK2 P12V      | 6Ah | ok  | 14.4 | 12.10 Volts
+CPU0 P1V1        | 6Ch | ok  |  3.4 | 1.10 Volts
+CPU1 P1V1        | 74h | ok  |  3.12 | 1.10 Volts
+CPU1 VSOC        | 7Ah | ok  |  3.10 | 1.18 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x10 0x00 0x00 0xffread type is 01 
+entity id is 07 
+entity is 08 
+sensor type is 03 
+reading type is 01 
+sensor ID is 11 
+P48V IOUT        | 11h | ok  | 14.11 | 7.72 Amps
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+DIMM10 T         | 4Fh | ns  |  8.11 | No Reading
+DIMM11 T         | 50h | ns  |  8.12 | No Reading
+CPU1 VCORE1      | 78h | ok  |  3.11 | 1.03 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x11 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 0b 
+sensor type is 03 
+reading type is 01 
+sensor ID is 12 
+BRICK1 P12V IOUT | 00h | ok  | 14.9 | 6.77 Amps
+BRICK2 P12V IOUT | 01h | ok  | 14.10 | 6.31 Amps
+fan0 pwm         | 12h | ok  | 29.0 | 29.79 unspecifi
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+fan4 tach        | 1Ch | ok  | 29.4 | 9120 RPM
+fan5 tach        | 1Dh | ok  | 29.5 | 9120 RPM
+BRICK1 P12V T    | 2Dh | ok  | 14.7 | 32 degrees C
+BRICK2 P12V T    | 2Eh | ok  | 14.8 | 31 degrees C
+DIMM11 T         | 50h | ns  |  8.12 | No Reading
+DIMM12 T         | 51h | ns  |  8.13 | No Reading
+BRICK1 P12V      | 69h | ok  | 14.3 | 12.03 Volts
+BRICK2 P12V      | 6Ah | ok  | 14.4 | 12.10 Volts
+CPU0 VDDIO       | 71h | ok  |  3.6 | 1.12 Volts
+CPU1 P1V1        | 74h | ok  |  3.12 | 1.10 Volts
+CPU1 VDDIO       | 79h | ok  |  3.14 | 1.12 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x12 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 00 
+sensor type is 04 
+reading type is 01 
+sensor ID is 13 
+fan1 pwm         | 13h | ok  | 29.1 | 29.79 unspecifi
+HOTSWAP PIN      | 2Ch | ok  | 14.5 | 413 Watts
+DIMM12 T         | 51h | ns  |  8.13 | No Reading
+DIMM13 T         | 52h | ns  |  8.14 | No Reading
+CPU0 13V5        | 6Bh | ok  |  3.8 | 13.42 Volts
+CPU1 13V5        | 73h | ok  |  3.16 | 13.49 Volts
+CPU1 P3V3        | 76h | ok  |  3.13 | 2.75 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x13 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 01 
+sensor type is 04 
+reading type is 01 
+sensor ID is 14 
+BRICK1 P12V IOUT | 00h | ok  | 14.9 | 6.77 Amps
+BRICK2 P12V IOUT | 01h | ok  | 14.10 | 6.31 Amps
+P48V IOUT        | 11h | ok  | 14.11 | 8.01 Amps
+fan2 pwm         | 14h | ok  | 29.2 | 19.99 unspecifi
+HOTSWAP PIN      | 2Ch | ok  | 14.5 | 413 Watts
+BRICK1 P12V T    | 2Dh | ok  | 14.7 | 32 degrees C
+BRICK2 P12V T    | 2Eh | ok  | 14.8 | 31 degrees C
+DIMM13 T         | 52h | ns  |  8.14 | No Reading
+DIMM14 T         | 53h | ns  |  8.15 | No Reading
+HOTSWAP T        | 5Dh | ok  | 14.6 | 31 degrees C
+BRICK1 P12V      | 69h | ok  | 14.3 | 12.03 Volts
+BRICK2 P12V      | 6Ah | ok  | 14.4 | 12.10 Volts
+CPU1 VDDIO       | 79h | ok  |  3.14 | 1.12 Volts
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x14 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 02 
+sensor type is 04 
+reading type is 01 
+sensor ID is 15 
+CPU0 VDDIO IOUT  | 07h | ok  |  3.56 | 24.15 Amps
+fan3 pwm         | 15h | ok  | 29.3 | 19.99 unspecifi
+DIMM14 T         | 53h | ns  |  8.15 | No Reading
+DIMM15 T         | 54h | ns  |  8.16 | No Reading
+CPU1 P1V8        | 75h | ok  |  3.15 | 1.80 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x15 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 03 
+sensor type is 04 
+reading type is 01 
+sensor ID is 16 
+CPU0 P1V1 IOUT   | 02h | ok  |  3.54 | 8.16 Amps
+CPU1 VDDIO IOUT  | 0Eh | ok  |  3.63 | 16.56 Amps
+fan4 pwm         | 16h | ok  | 29.4 | 39.98 unspecifi
+DIMM15 T         | 54h | ns  |  8.16 | No Reading
+DIMM16 T         | 55h | ns  |  8.17 | No Reading
+MB INLET T       | 5Fh | ok  | 16.8 | 21 degrees C
+BMC P1V0         | 63h | ok  | 16.3 | 1.01 Volts
+BMC P1V2         | 64h | ok  | 16.4 | 1.20 Volts
+BMC P1V8         | 65h | ok  | 16.5 | 1.81 Volts
+BMC P2V5         | 66h | ok  | 16.6 | 2.51 Volts
+BMC P3V3 STBY    | 67h | ok  | 16.7 | 3.39 Volts
+BMC PV6          | 68h | ok  | 16.2 | 0.60 Volts
+CPU1 13V5        | 73h | ok  |  3.16 | 13.49 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x16 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 04 
+sensor type is 04 
+reading type is 01 
+sensor ID is 17 
+fan5 pwm         | 17h | ok  | 29.5 | 39.98 unspecifi
+DIMM16 T         | 55h | ns  |  8.17 | No Reading
+DIMM17 T         | 56h | ns  |  8.18 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x17 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 05 
+sensor type is 04 
+reading type is 01 
+sensor ID is 18 
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+CPU1 VDDIO POUT  | 2Ah | ok  |  3.31 | 18.04 Watts
+DIMM17 T         | 56h | ns  |  8.18 | No Reading
+DIMM18 T         | 57h | ns  |  8.19 | No Reading
+CPU0 VSOC        | 72h | ok  |  3.2 | 1.18 Volts
+CPU1 VSOC        | 7Ah | ok  |  3.10 | 1.18 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x18 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 00 
+sensor type is 04 
+reading type is 01 
+sensor ID is 19 
+fan2 pwm         | 14h | ok  | 29.2 | 19.99 unspecifi
+fan3 pwm         | 15h | ok  | 29.3 | 19.99 unspecifi
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+CPU0 VCORE0 POUT | 21h | ok  |  3.19 | 0 Watts
+DIMM18 T         | 57h | ns  |  8.19 | No Reading
+DIMM19 T         | 58h | ns  |  8.20 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x19 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 01 
+sensor type is 04 
+reading type is 01 
+sensor ID is 1A 
+fan2 tach        | 1Ah | ok  | 29.2 | 3550 RPM
+ipmitool raw 0x04 0x21 0x00 0x00 0x1A 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 02 
+sensor type is 04 
+reading type is 01 
+sensor ID is 1B 
+fan3 tach        | 1Bh | ok  | 29.3 | 3621 RPM
+ipmitool raw 0x04 0x21 0x00 0x00 0x1B 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 03 
+sensor type is 04 
+reading type is 01 
+sensor ID is 1C 
+fan4 tach        | 1Ch | ok  | 29.4 | 9120 RPM
+ipmitool raw 0x04 0x21 0x00 0x00 0x1C 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 04 
+sensor type is 04 
+reading type is 01 
+sensor ID is 1D 
+fan5 tach        | 1Dh | ok  | 29.5 | 9120 RPM
+ipmitool raw 0x04 0x21 0x00 0x00 0x1D 0x00 0x00 0xffread type is 01 
+entity id is 1d 
+entity is 05 
+sensor type is 04 
+reading type is 01 
+sensor ID is 1E 
+CPU0 P1V1 POUT   | 1Eh | ok  |  3.22 | 7.18 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x1E 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 16 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 1F 
+CPU0 P1V8 POUT   | 1Fh | ok  |  3.25 | 8.00 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x1F 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 19 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 20 
+CPU1 P1V1 IOUT   | 09h | ok  |  3.61 | 10.20 Amps
+fan4 tach        | 1Ch | ok  | 29.4 | 9120 RPM
+CPU0 P3V3 POUT   | 20h | ok  |  3.23 | 0 Watts
+CPU0 VSOC POUT   | 24h | ok  |  3.20 | 56.94 Watts
+DIMM19 T         | 58h | ns  |  8.20 | No Reading
+DIMM20 T         | 59h | ns  |  8.21 | No Reading
+BMC P1V2         | 64h | ok  | 16.4 | 1.20 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x20 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 17 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 21 
+fan3 tach        | 1Bh | ok  | 29.3 | 3621 RPM
+CPU0 VCORE0 POUT | 21h | ok  |  3.19 | 0 Watts
+CPU0 VCORE1 POUT | 22h | ok  |  3.21 | 0 Watts
+DIMM20 T         | 59h | ns  |  8.21 | No Reading
+DIMM21 T         | 5Ah | ns  |  8.22 | No Reading
+MB INLET T       | 5Fh | ok  | 16.8 | 21 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x21 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 13 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 22 
+CPU0 P1V1 POUT   | 1Eh | ok  |  3.22 | 8.08 Watts
+CPU0 VCORE1 POUT | 22h | ok  |  3.21 | 0 Watts
+DIMM21 T         | 5Ah | ns  |  8.22 | No Reading
+DIMM22 T         | 5Bh | ns  |  8.23 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x22 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 15 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 23 
+CPU0 P3V3 POUT   | 20h | ok  |  3.23 | 0 Watts
+CPU0 VDDIO POUT  | 23h | ok  |  3.24 | 26.24 Watts
+DIMM22 T         | 5Bh | ns  |  8.23 | No Reading
+DIMM23 T         | 5Ch | ns  |  8.24 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x23 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 18 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 24 
+CPU0 VDDIO IOUT  | 07h | ok  |  3.56 | 24.15 Amps
+CPU0 VDDIO POUT  | 23h | ok  |  3.24 | 26.24 Watts
+CPU0 VSOC POUT   | 24h | ok  |  3.20 | 56.94 Watts
+DIMM23 T         | 5Ch | ns  |  8.24 | No Reading
+MB OUTLET T 3    | 62h | ok  |  7.6 | 24 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x24 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 14 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 25 
+CPU0 P1V8 POUT   | 1Fh | ok  |  3.25 | 8.00 Watts
+CPU1 P1V1 POUT   | 25h | ok  |  3.29 | 9.88 Watts
+CPU0 DIMM 0 T    | 2Fh | ns  |  8.25 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x25 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 1d 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 26 
+CPU1 P1V8 POUT   | 26h | ok  |  3.32 | 5.97 Watts
+CPU1 VCORE0 POUT | 28h | ok  |  3.26 | 0 Watts
+CPU1 VSOC POUT   | 2Bh | ok  |  3.27 | 52.26 Watts
+CPU0 DIMM 1 T    | 30h | ns  |  8.26 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x26 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 20 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 27 
+CPU1 P3V3 POUT   | 27h | ok  |  3.30 | 0 Watts
+CPU1 VSOC POUT   | 2Bh | ok  |  3.27 | 53.04 Watts
+CPU1 DIMM 0 T    | 3Ah | ns  |  8.27 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x27 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 1e 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 28 
+CPU1 VCORE0 POUT | 28h | ok  |  3.26 | 0 Watts
+CPU1 VCORE1 POUT | 29h | ok  |  3.28 | 0 Watts
+CPU1 DIMM 1 T    | 3Bh | ns  |  8.28 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x28 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 1a 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 29 
+fan0 pwm         | 12h | ok  | 29.0 | 29.79 unspecifi
+fan1 pwm         | 13h | ok  | 29.1 | 29.79 unspecifi
+fan2 pwm         | 14h | ok  | 29.2 | 19.99 unspecifi
+fan3 pwm         | 15h | ok  | 29.3 | 19.99 unspecifi
+fan4 pwm         | 16h | ok  | 29.4 | 39.98 unspecifi
+fan5 pwm         | 17h | ok  | 29.5 | 39.98 unspecifi
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+fan2 tach        | 1Ah | ok  | 29.2 | 3550 RPM
+fan3 tach        | 1Bh | ok  | 29.3 | 3621 RPM
+fan4 tach        | 1Ch | ok  | 29.4 | 9120 RPM
+fan5 tach        | 1Dh | ok  | 29.5 | 9120 RPM
+CPU1 P1V1 POUT   | 25h | ok  |  3.29 | 9.88 Watts
+CPU1 VCORE1 POUT | 29h | ok  |  3.28 | 0 Watts
+MB OUTLET T 1    | 60h | ok  |  7.4 | 29 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x29 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 1c 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 2A 
+CPU1 VDDIO POUT  | 2Ah | ok  |  3.31 | 18.86 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x2A 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 1f 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 2B 
+CPU1 VSOC POUT   | 2Bh | ok  |  3.27 | 50.70 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x2B 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 1b 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 2C 
+HOTSWAP PIN      | 2Ch | ok  | 14.5 | 424.80 Watts
+ipmitool raw 0x04 0x21 0x00 0x00 0x2C 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 05 
+sensor type is 0b 
+reading type is 01 
+sensor ID is 2D 
+BRICK1 P12V T    | 2Dh | ok  | 14.7 | 32 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x2D 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 07 
+sensor type is 01 
+reading type is 01 
+sensor ID is 2E 
+BRICK2 P12V T    | 2Eh | ok  | 14.8 | 31 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x2E 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 08 
+sensor type is 01 
+reading type is 01 
+sensor ID is 2F 
+CPU0 DIMM 0 T    | 2Fh | ns  |  8.25 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x2F 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 19 
+sensor type is 01 
+reading type is 01 
+sensor ID is 30 
+CPU1 P3V3 POUT   | 27h | ok  |  3.30 | 0 Watts
+CPU0 DIMM 1 T    | 30h | ns  |  8.26 | No Reading
+MAIN P3V3        | 7Bh | ok  |  7.2 | 3.30 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x30 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 1a 
+sensor type is 01 
+reading type is 01 
+sensor ID is 31 
+BRICK1 P12V IOUT | 00h | ok  | 14.9 | 6.31 Amps
+BRICK2 P12V IOUT | 01h | ok  | 14.10 | 6.31 Amps
+CPU1 VDDIO POUT  | 2Ah | ok  |  3.31 | 18.04 Watts
+BRICK2 P12V T    | 2Eh | ok  | 14.8 | 31 degrees C
+CPU0 NBM T       | 31h | ns  |  3.49 | No Reading
+HOTSWAP T        | 5Dh | ok  | 14.6 | 31 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x31 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 31 
+sensor type is 01 
+reading type is 01 
+sensor ID is 32 
+CPU1 P1V8 POUT   | 26h | ok  |  3.32 | 5.97 Watts
+BRICK1 P12V T    | 2Dh | ok  | 14.7 | 32 degrees C
+CPU0 P1V1 T      | 32h | ok  |  3.38 | 37 degrees C
+MB OUTLET T 2    | 61h | ok  |  7.5 | 32 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x32 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 26 
+sensor type is 01 
+reading type is 01 
+sensor ID is 33 
+CPU0 P1V8 T      | 33h | ok  |  3.45 | 39 degrees C
+CPU0 VCORE0 T    | 36h | ok  |  3.33 | 42 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x33 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 2d 
+sensor type is 01 
+reading type is 01 
+sensor ID is 34 
+CPU0 P3V3 T      | 34h | ok  |  3.42 | 38 degrees C
+CPU0 VSOC T      | 39h | ok  |  3.34 | 44 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x34 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 2a 
+sensor type is 01 
+reading type is 01 
+sensor ID is 35 
+fan2 tach        | 1Ah | ok  | 29.2 | 3550 RPM
+CPU0 T           | 35h | ok  |  3.47 | 55 degrees C
+CPU1 P3V3 T      | 3Fh | ok  |  3.44 | 35 degrees C
+CPU1 VCORE0 T    | 41h | ok  |  3.35 | 42 degrees C
+CPU1 VCORE1 T    | 42h | ok  |  3.39 | 35 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x35 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 2f 
+sensor type is 01 
+reading type is 01 
+sensor ID is 36 
+fan3 tach        | 1Bh | ok  | 29.3 | 3621 RPM
+CPU0 VCORE0 T    | 36h | ok  |  3.33 | 42 degrees C
+CPU0 VCORE1 T    | 37h | ok  |  3.37 | 36 degrees C
+CPU1 VSOC T      | 44h | ok  |  3.36 | 46 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x36 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 21 
+sensor type is 01 
+reading type is 01 
+sensor ID is 37 
+CPU0 P1V1 T      | 32h | ok  |  3.38 | 37 degrees C
+CPU0 VCORE1 T    | 37h | ok  |  3.37 | 36 degrees C
+CPU1 P1V1 T      | 3Dh | ok  |  3.40 | 37 degrees C
+CPU1 VIO T       | 43h | ok  |  3.43 | 37 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x37 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 25 
+sensor type is 01 
+reading type is 01 
+sensor ID is 38 
+CPU0 P1V1 T      | 32h | ok  |  3.38 | 37 degrees C
+CPU0 P3V3 T      | 34h | ok  |  3.42 | 38 degrees C
+CPU0 VIO T       | 38h | ok  |  3.41 | 40 degrees C
+CPU1 P1V8 T      | 3Eh | ok  |  3.46 | 38 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x38 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 29 
+sensor type is 01 
+reading type is 01 
+sensor ID is 39 
+fan4 pwm         | 16h | ok  | 29.4 | 39.98 unspecifi
+fan5 pwm         | 17h | ok  | 29.5 | 39.98 unspecifi
+CPU0 P1V8 T      | 33h | ok  |  3.45 | 39 degrees C
+CPU0 VSOC T      | 39h | ok  |  3.34 | 44 degrees C
+CPU1 VCORE1 T    | 42h | ok  |  3.39 | 35 degrees C
+BMC P3V3 STBY    | 67h | ok  | 16.7 | 3.39 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x39 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 22 
+sensor type is 01 
+reading type is 01 
+sensor ID is 3A 
+CPU1 DIMM 0 T    | 3Ah | ns  |  8.27 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x3A 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 1b 
+sensor type is 01 
+reading type is 01 
+sensor ID is 3B 
+CPU1 DIMM 1 T    | 3Bh | ns  |  8.28 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x3B 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 1c 
+sensor type is 01 
+reading type is 01 
+sensor ID is 3C 
+CPU1 NBM T       | 3Ch | ns  |  3.50 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x3C 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 32 
+sensor type is 01 
+reading type is 01 
+sensor ID is 3D 
+CPU1 P1V1 T      | 3Dh | ok  |  3.40 | 37 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x3D 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 28 
+sensor type is 01 
+reading type is 01 
+sensor ID is 3E 
+CPU1 P1V8 T      | 3Eh | ok  |  3.46 | 38 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x3E 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 2e 
+sensor type is 01 
+reading type is 01 
+sensor ID is 3F 
+CPU1 P3V3 T      | 3Fh | ok  |  3.44 | 35 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x3F 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 2c 
+sensor type is 01 
+reading type is 01 
+sensor ID is 40 
+CPU0 VIO T       | 38h | ok  |  3.41 | 40 degrees C
+CPU1 P1V1 T      | 3Dh | ok  |  3.40 | 37 degrees C
+CPU1 T           | 40h | ok  |  3.48 | 57 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x40 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 30 
+sensor type is 01 
+reading type is 01 
+sensor ID is 41 
+CPU0 VIO T       | 38h | ok  |  3.41 | 40 degrees C
+CPU1 VCORE0 T    | 41h | ok  |  3.35 | 42 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x41 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 23 
+sensor type is 01 
+reading type is 01 
+sensor ID is 42 
+CPU0 P3V3 T      | 34h | ok  |  3.42 | 37 degrees C
+CPU0 VCORE0 T    | 36h | ok  |  3.33 | 42 degrees C
+CPU1 VCORE0 T    | 41h | ok  |  3.35 | 42 degrees C
+CPU1 VCORE1 T    | 42h | ok  |  3.39 | 35 degrees C
+CPU0 13V5        | 6Bh | ok  |  3.8 | 13.42 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x42 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 27 
+sensor type is 01 
+reading type is 01 
+sensor ID is 43 
+CPU1 VIO T       | 43h | ok  |  3.43 | 37 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x43 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 2b 
+sensor type is 01 
+reading type is 01 
+sensor ID is 44 
+CPU1 VSOC IOUT   | 0Fh | ok  |  3.59 | 44.20 Amps
+CPU0 VSOC T      | 39h | ok  |  3.34 | 44 degrees C
+CPU1 P3V3 T      | 3Fh | ok  |  3.44 | 35 degrees C
+CPU1 VSOC T      | 44h | ok  |  3.36 | 46 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x44 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 24 
+sensor type is 01 
+reading type is 01 
+sensor ID is 45 
+CPU0 P1V8 T      | 33h | ok  |  3.45 | 39 degrees C
+DIMM0 T          | 45h | ns  |  8.1 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x45 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 01 
+sensor type is 01 
+reading type is 01 
+sensor ID is 46 
+CPU1 P1V8 T      | 3Eh | ok  |  3.46 | 38 degrees C
+CPU1 VSOC T      | 44h | ok  |  3.36 | 46 degrees C
+DIMM1 T          | 46h | ns  |  8.2 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x46 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 02 
+sensor type is 01 
+reading type is 01 
+sensor ID is 47 
+CPU0 T           | 35h | ok  |  3.47 | 55 degrees C
+DIMM2 T          | 47h | ns  |  8.3 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x47 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 03 
+sensor type is 01 
+reading type is 01 
+sensor ID is 48 
+P48V IOUT        | 11h | ok  | 14.11 | 7.44 Amps
+CPU1 T           | 40h | ok  |  3.48 | 57 degrees C
+DIMM3 T          | 48h | ns  |  8.4 | No Reading
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x48 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 04 
+sensor type is 01 
+reading type is 01 
+sensor ID is 49 
+CPU0 NBM T       | 31h | ns  |  3.49 | No Reading
+DIMM4 T          | 49h | ns  |  8.5 | No Reading
+CPU1 13V5        | 73h | ok  |  3.16 | 13.49 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x49 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 05 
+sensor type is 01 
+reading type is 01 
+sensor ID is 4A 
+DIMM5 T          | 4Ah | ns  |  8.6 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x4A 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 06 
+sensor type is 01 
+reading type is 01 
+sensor ID is 4B 
+DIMM6 T          | 4Bh | ns  |  8.7 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x4B 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 07 
+sensor type is 01 
+reading type is 01 
+sensor ID is 4C 
+DIMM7 T          | 4Ch | ns  |  8.8 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x4C 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 08 
+sensor type is 01 
+reading type is 01 
+sensor ID is 4D 
+DIMM8 T          | 4Dh | ns  |  8.9 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x4D 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 09 
+sensor type is 01 
+reading type is 01 
+sensor ID is 4E 
+DIMM9 T          | 4Eh | ns  |  8.10 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x4E 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 0a 
+sensor type is 01 
+reading type is 01 
+sensor ID is 4F 
+DIMM10 T         | 4Fh | ns  |  8.11 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x4F 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 0b 
+sensor type is 01 
+reading type is 01 
+sensor ID is 50 
+fan2 tach        | 1Ah | ok  | 29.2 | 3550 RPM
+CPU1 NBM T       | 3Ch | ns  |  3.50 | No Reading
+DIMM11 T         | 50h | ns  |  8.12 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x50 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 0c 
+sensor type is 01 
+reading type is 01 
+sensor ID is 51 
+CPU0 VCORE0 IOUT | 05h | ok  |  3.51 | 0 Amps
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+DIMM12 T         | 51h | ns  |  8.13 | No Reading
+BMC P2V5         | 66h | ok  | 16.6 | 2.51 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x51 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 0d 
+sensor type is 01 
+reading type is 01 
+sensor ID is 52 
+CPU0 VSOC IOUT   | 08h | ok  |  3.52 | 48.10 Amps
+CPU1 VSOC POUT   | 2Bh | ok  |  3.27 | 52.26 Watts
+DIMM13 T         | 52h | ns  |  8.14 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x52 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 0e 
+sensor type is 01 
+reading type is 01 
+sensor ID is 53 
+CPU0 VCORE1 IOUT | 06h | ok  |  3.53 | 0 Amps
+DIMM14 T         | 53h | ns  |  8.15 | No Reading
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x53 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 0f 
+sensor type is 01 
+reading type is 01 
+sensor ID is 54 
+CPU0 P1V1 IOUT   | 02h | ok  |  3.54 | 8.16 Amps
+DIMM15 T         | 54h | ns  |  8.16 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x54 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 10 
+sensor type is 01 
+reading type is 01 
+sensor ID is 55 
+CPU0 P3V3 IOUT   | 04h | ok  |  3.55 | 0 Amps
+fan2 tach        | 1Ah | ok  | 29.2 | 3550 RPM
+CPU0 T           | 35h | ok  |  3.47 | 55 degrees C
+DIMM16 T         | 55h | ns  |  8.17 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x55 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 11 
+sensor type is 01 
+reading type is 01 
+sensor ID is 56 
+CPU0 VDDIO IOUT  | 07h | ok  |  3.56 | 24.15 Amps
+CPU1 VDDIO IOUT  | 0Eh | ok  |  3.63 | 16.56 Amps
+CPU0 VSOC POUT   | 24h | ok  |  3.20 | 56.16 Watts
+DIMM17 T         | 56h | ns  |  8.18 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x56 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 12 
+sensor type is 01 
+reading type is 01 
+sensor ID is 57 
+CPU0 P1V8 IOUT   | 03h | ok  |  3.57 | 4.69 Amps
+CPU1 T           | 40h | ok  |  3.48 | 57 degrees C
+DIMM18 T         | 57h | ns  |  8.19 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x57 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 13 
+sensor type is 01 
+reading type is 01 
+sensor ID is 58 
+CPU1 VCORE0 IOUT | 0Ch | ok  |  3.58 | 0 Amps
+DIMM19 T         | 58h | ns  |  8.20 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x58 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 14 
+sensor type is 01 
+reading type is 01 
+sensor ID is 59 
+CPU1 VSOC IOUT   | 0Fh | ok  |  3.59 | 44.20 Amps
+DIMM20 T         | 59h | ns  |  8.21 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x59 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 15 
+sensor type is 01 
+reading type is 01 
+sensor ID is 5A 
+DIMM21 T         | 5Ah | ns  |  8.22 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x5A 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 16 
+sensor type is 01 
+reading type is 01 
+sensor ID is 5B 
+DIMM22 T         | 5Bh | ns  |  8.23 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x5B 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 17 
+sensor type is 01 
+reading type is 01 
+sensor ID is 5C 
+DIMM23 T         | 5Ch | ns  |  8.24 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x5C 0x00 0x00 0xffread type is 01 
+entity id is 08 
+entity is 18 
+sensor type is 01 
+reading type is 01 
+sensor ID is 5D 
+HOTSWAP T        | 5Dh | ok  | 14.6 | 31 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x5D 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 06 
+sensor type is 01 
+reading type is 01 
+sensor ID is 5E 
+M2 T             | 5Eh | ns  |  7.7 | No Reading
+ipmitool raw 0x04 0x21 0x00 0x00 0x5E 0x00 0x00 0xffread type is 01 
+entity id is 07 
+entity is 07 
+sensor type is 01 
+reading type is 01 
+sensor ID is 5F 
+MB INLET T       | 5Fh | ok  | 16.8 | 21 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x5F 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 08 
+sensor type is 01 
+reading type is 01 
+sensor ID is 60 
+CPU1 VCORE1 IOUT | 0Dh | ok  |  3.60 | 0 Amps
+MB OUTLET T 1    | 60h | ok  |  7.4 | 29 degrees C
+BMC PV6          | 68h | ok  | 16.2 | 0.60 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x60 0x00 0x00 0xffread type is 01 
+entity id is 07 
+entity is 04 
+sensor type is 01 
+reading type is 01 
+sensor ID is 61 
+CPU1 P1V1 IOUT   | 09h | ok  |  3.61 | 9.79 Amps
+MB OUTLET T 2    | 61h | ok  |  7.5 | 32 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x61 0x00 0x00 0xffread type is 01 
+entity id is 07 
+entity is 05 
+sensor type is 01 
+reading type is 01 
+sensor ID is 62 
+CPU1 P3V3 IOUT   | 0Bh | ok  |  3.62 | 0 Amps
+fan3 tach        | 1Bh | ok  | 29.3 | 3621 RPM
+MB OUTLET T 3    | 62h | ok  |  7.6 | 24 degrees C
+ipmitool raw 0x04 0x21 0x00 0x00 0x62 0x00 0x00 0xffread type is 01 
+entity id is 07 
+entity is 06 
+sensor type is 01 
+reading type is 01 
+sensor ID is 63 
+CPU1 VDDIO IOUT  | 0Eh | ok  |  3.63 | 16.56 Amps
+BMC P1V0         | 63h | ok  | 16.3 | 1.01 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x63 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 03 
+sensor type is 02 
+reading type is 01 
+sensor ID is 64 
+CPU1 P1V8 IOUT   | 0Ah | ok  |  3.64 | 3.62 Amps
+BMC P1V2         | 64h | ok  | 16.4 | 1.20 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x64 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 04 
+sensor type is 02 
+reading type is 01 
+sensor ID is 65 
+BMC P1V8         | 65h | ok  | 16.5 | 1.81 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x65 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 05 
+sensor type is 02 
+reading type is 01 
+sensor ID is 66 
+BMC P2V5         | 66h | ok  | 16.6 | 2.51 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x66 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 06 
+sensor type is 02 
+reading type is 01 
+sensor ID is 67 
+BMC P3V3 STBY    | 67h | ok  | 16.7 | 3.39 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x67 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 07 
+sensor type is 02 
+reading type is 01 
+sensor ID is 68 
+BMC PV6          | 68h | ok  | 16.2 | 0.60 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x68 0x00 0x00 0xffread type is 01 
+entity id is 10 
+entity is 02 
+sensor type is 02 
+reading type is 01 
+sensor ID is 69 
+CPU0 P1V8 IOUT   | 03h | ok  |  3.57 | 4.69 Amps
+BRICK1 P12V      | 69h | ok  | 14.3 | 12.03 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x69 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 03 
+sensor type is 02 
+reading type is 01 
+sensor ID is 6A 
+BRICK2 P12V      | 6Ah | ok  | 14.4 | 12.10 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x6A 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 04 
+sensor type is 02 
+reading type is 01 
+sensor ID is 6B 
+CPU0 13V5        | 6Bh | ok  |  3.8 | 13.42 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x6B 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 08 
+sensor type is 02 
+reading type is 01 
+sensor ID is 6C 
+CPU0 P1V1        | 6Ch | ok  |  3.4 | 1.10 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x6C 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 04 
+sensor type is 02 
+reading type is 01 
+sensor ID is 6D 
+CPU0 P1V8        | 6Dh | ok  |  3.7 | 1.80 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x6D 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 07 
+sensor type is 02 
+reading type is 01 
+sensor ID is 6E 
+CPU0 P3V3        | 6Eh | ok  |  3.5 | 2.75 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x6E 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 05 
+sensor type is 02 
+reading type is 01 
+sensor ID is 6F 
+CPU0 VCORE0      | 6Fh | ok  |  3.1 | 1.03 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x6F 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 01 
+sensor type is 02 
+reading type is 01 
+sensor ID is 70 
+CPU0 VCORE1      | 70h | ok  |  3.3 | 1.03 Volts
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x70 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 03 
+sensor type is 02 
+reading type is 01 
+sensor ID is 71 
+CPU0 VDDIO       | 71h | ok  |  3.6 | 1.12 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x71 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 06 
+sensor type is 02 
+reading type is 01 
+sensor ID is 72 
+P48V IOUT        | 11h | ok  | 14.11 | 7.72 Amps
+CPU0 VSOC        | 72h | ok  |  3.2 | 1.18 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x72 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 02 
+sensor type is 02 
+reading type is 01 
+sensor ID is 73 
+CPU1 13V5        | 73h | ok  |  3.16 | 13.49 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x73 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 10 
+sensor type is 02 
+reading type is 01 
+sensor ID is 74 
+CPU1 P1V1        | 74h | ok  |  3.12 | 1.10 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x74 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 0c 
+sensor type is 02 
+reading type is 01 
+sensor ID is 75 
+CPU0 P3V3        | 6Eh | ok  |  3.5 | 2.75 Volts
+CPU1 P1V8        | 75h | ok  |  3.15 | 1.80 Volts
+CPU1 P3V3        | 76h | ok  |  3.13 | 2.75 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x75 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 0f 
+sensor type is 02 
+reading type is 01 
+sensor ID is 76 
+CPU1 P3V3        | 76h | ok  |  3.13 | 2.75 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x76 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 0d 
+sensor type is 02 
+reading type is 01 
+sensor ID is 77 
+CPU1 VCORE0      | 77h | ok  |  3.9 | 1.03 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x77 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 09 
+sensor type is 02 
+reading type is 01 
+sensor ID is 78 
+CPU1 P1V1 POUT   | 25h | ok  |  3.29 | 10.78 Watts
+CPU1 VCORE1      | 78h | ok  |  3.11 | 1.03 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x78 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 0b 
+sensor type is 02 
+reading type is 01 
+sensor ID is 79 
+CPU1 P1V1 IOUT   | 09h | ok  |  3.61 | 9.79 Amps
+fan0 pwm         | 12h | ok  | 29.0 | 29.79 unspecifi
+fan1 pwm         | 13h | ok  | 29.1 | 29.79 unspecifi
+CPU1 VDDIO       | 79h | ok  |  3.14 | 1.12 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x79 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 0e 
+sensor type is 02 
+reading type is 01 
+sensor ID is 7A 
+CPU1 VSOC        | 7Ah | ok  |  3.10 | 1.18 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x7A 0x00 0x00 0xffread type is 01 
+entity id is 03 
+entity is 0a 
+sensor type is 02 
+reading type is 01 
+sensor ID is 7B 
+MAIN P3V3        | 7Bh | ok  |  7.2 | 3.30 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x7B 0x00 0x00 0xffread type is 01 
+entity id is 07 
+entity is 02 
+sensor type is 02 
+reading type is 01 
+sensor ID is 7C 
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+ipmitool raw 0x04 0x21 0x00 0x00 0x7C 0x00 0x00 0xffread type is 01 
+entity id is 0e 
+entity is 02 
+sensor type is 02 
+reading type is 01 

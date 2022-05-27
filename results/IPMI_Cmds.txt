@@ -1,0 +1,1071 @@
+
+ipmitool raw 0x06 0x22
+
+
+ipmitool raw 0x06 0x25
+ 44 01 00 00 64 00 63 00
+
+ipmitool raw 0x00 0x00
+ 04 20 20 20 20 20
+
+ipmitool raw 0x00 0x01
+ 41 00 70 00
+
+ipmitool raw 0x00 0x02 0x02
+
+
+ipmitool raw 0x00 0x06
+
+ipmitool sdr elist
+fan0 pwm         | 00h | ns  | 29.0 | No Reading
+BRICK2 P12V IOUT | 01h | ok  |  0.1 | 6.31 Amps
+CPU0 P1V1 IOUT   | 02h | ns  |  0.1 | No Reading
+CPU0 P1V8 IOUT   | 03h | ns  |  0.1 | No Reading
+CPU0 P3V3 IOUT   | 04h | ns  |  0.1 | No Reading
+CPU0 VCORE0 IOUT | 05h | ns  |  0.1 | No Reading
+CPU0 VCORE1 IOUT | 06h | ns  |  0.1 | No Reading
+CPU0 VDDIO IOUT  | 07h | ns  |  0.1 | No Reading
+CPU0 VSOC IOUT   | 08h | ns  |  0.1 | No Reading
+CPU1 P1V1 IOUT   | 09h | ns  |  3.61 | No Reading
+CPU1 P1V8 IOUT   | 0Ah | ns  |  3.64 | No Reading
+CPU1 P3V3 IOUT   | 0Bh | ns  |  3.62 | No Reading
+CPU1 VCORE0 IOUT | 0Ch | ns  |  0.1 | No Reading
+CPU1 VCORE1 IOUT | 0Dh | ns  |  3.60 | No Reading
+CPU1 VDDIO IOUT  | 0Eh | ns  |  3.63 | No Reading
+CPU1 VSOC IOUT   | 0Fh | ns  |  0.1 | No Reading
+MAIN P3V3 IOUT   | 10h | ns  |  0.1 | No Reading
+P48V IOUT        | 11h | ok  | 14.11 | 7.44 Amps
+fan0 pwm         | 12h | ok  | 29.0 | 29.79 unspecifi
+fan1 pwm         | 13h | ok  | 29.1 | 29.79 unspecifi
+fan2 pwm         | 14h | ok  | 29.2 | 29.79 unspecifi
+fan3 pwm         | 15h | ok  | 29.3 | 29.79 unspecifi
+fan4 pwm         | 16h | ok  | 29.4 | 29.79 unspecifi
+fan5 pwm         | 17h | ok  | 29.5 | 29.79 unspecifi
+fan0 tach        | 18h | ok  | 29.0 | 5112 RPM
+fan1 tach        | 19h | ok  | 29.1 | 5112 RPM
+fan2 tach        | 1Ah | ok  | 29.2 | 4899 RPM
+fan3 tach        | 1Bh | ok  | 29.3 | 5112 RPM
+fan4 tach        | 1Ch | ok  | 29.4 | 7638 RPM
+fan5 tach        | 1Dh | ok  | 29.5 | 7980 RPM
+CPU0 P1V1 POUT   | 1Eh | ns  |  0.1 | No Reading
+CPU0 P1V8 POUT   | 1Fh | ns  |  0.1 | No Reading
+CPU0 P3V3 POUT   | 20h | ns  |  0.1 | No Reading
+CPU0 VCORE0 POUT | 21h | ns  |  0.1 | No Reading
+CPU0 VCORE1 POUT | 22h | ns  |  0.1 | No Reading
+CPU0 VDDIO POUT  | 23h | ns  |  0.1 | No Reading
+CPU0 VSOC POUT   | 24h | ns  |  0.1 | No Reading
+CPU1 P1V1 POUT   | 25h | ns  |  3.29 | No Reading
+CPU1 P1V8 POUT   | 26h | ns  |  3.32 | No Reading
+CPU1 P3V3 POUT   | 27h | ns  |  3.30 | No Reading
+CPU1 VCORE0 POUT | 28h | ns  |  0.1 | No Reading
+CPU1 VCORE1 POUT | 29h | ns  |  3.28 | No Reading
+CPU1 VDDIO POUT  | 2Ah | ns  |  3.31 | No Reading
+CPU1 VSOC POUT   | 2Bh | ns  |  0.1 | No Reading
+HOTSWAP PIN      | 2Ch | ok  | 14.5 | 424.80 Watts
+BRICK1 P12V T    | 2Dh | ok  |  0.1 | 32 degrees C
+BRICK2 P12V T    | 2Eh | ok  |  0.1 | 31 degrees C
+CPU0 DIMM 0 T    | 2Fh | ns  |  8.25 | No Reading
+CPU0 DIMM 1 T    | 30h | ns  |  8.26 | No Reading
+CPU0 NBM T       | 31h | ns  |  3.49 | No Reading
+CPU0 P1V1 T      | 32h | ns  |  3.38 | No Reading
+CPU0 P1V8 T      | 33h | ns  |  0.1 | No Reading
+CPU0 P3V3 T      | 34h | ns  |  0.1 | No Reading
+CPU0 T           | 35h | ns  |  3.47 | No Reading
+CPU0 VCORE0 T    | 36h | ns  |  0.1 | No Reading
+CPU0 VCORE1 T    | 37h | ns  |  0.1 | No Reading
+CPU0 VIO T       | 38h | ns  |  0.1 | No Reading
+CPU0 VSOC T      | 39h | ns  |  0.1 | No Reading
+CPU1 DIMM 0 T    | 3Ah | ns  |  8.27 | No Reading
+CPU1 DIMM 1 T    | 3Bh | ns  |  8.28 | No Reading
+CPU1 NBM T       | 3Ch | ns  |  3.50 | No Reading
+CPU1 P1V1 T      | 3Dh | ns  |  3.40 | No Reading
+CPU1 P1V8 T      | 3Eh | ns  |  3.46 | No Reading
+CPU1 P3V3 T      | 3Fh | ns  |  3.44 | No Reading
+CPU1 T           | 40h | ns  |  3.48 | No Reading
+CPU1 VCORE0 T    | 41h | ns  |  0.1 | No Reading
+CPU1 VCORE1 T    | 42h | ns  |  3.39 | No Reading
+CPU1 VIO T       | 43h | ns  |  3.43 | No Reading
+CPU1 VSOC T      | 44h | ns  |  0.1 | No Reading
+DIMM0 T          | 45h | ns  |  8.1 | No Reading
+DIMM1 T          | 46h | ns  |  8.2 | No Reading
+DIMM2 T          | 47h | ns  |  8.3 | No Reading
+DIMM3 T          | 48h | ns  |  8.4 | No Reading
+DIMM4 T          | 49h | ns  |  8.5 | No Reading
+DIMM5 T          | 4Ah | ns  |  8.6 | No Reading
+DIMM6 T          | 4Bh | ns  |  8.7 | No Reading
+DIMM7 T          | 4Ch | ns  |  8.8 | No Reading
+DIMM8 T          | 4Dh | ns  |  8.9 | No Reading
+DIMM9 T          | 4Eh | ns  |  8.10 | No Reading
+DIMM10 T         | 4Fh | ns  |  8.11 | No Reading
+DIMM11 T         | 50h | ns  |  8.12 | No Reading
+DIMM12 T         | 51h | ns  |  8.13 | No Reading
+DIMM13 T         | 52h | ns  |  8.14 | No Reading
+DIMM14 T         | 53h | ns  |  8.15 | No Reading
+DIMM15 T         | 54h | ns  |  8.16 | No Reading
+DIMM16 T         | 55h | ns  |  8.17 | No Reading
+DIMM17 T         | 56h | ns  |  8.18 | No Reading
+DIMM18 T         | 57h | ns  |  8.19 | No Reading
+DIMM19 T         | 58h | ns  |  8.20 | No Reading
+DIMM20 T         | 59h | ns  |  8.21 | No Reading
+DIMM21 T         | 5Ah | ns  |  8.22 | No Reading
+DIMM22 T         | 5Bh | ns  |  8.23 | No Reading
+DIMM23 T         | 5Ch | ns  |  8.24 | No Reading
+HOTSWAP T        | 5Dh | ok  | 14.6 | 31 degrees C
+M2 T             | 5Eh | ns  |  7.7 | No Reading
+MB INLET T       | 5Fh | ok  | 16.8 | 21 degrees C
+MB OUTLET T 1    | 60h | ok  |  7.4 | 29 degrees C
+MB OUTLET T 2    | 61h | ok  |  7.5 | 32 degrees C
+MB OUTLET T 3    | 62h | ok  |  7.6 | 24 degrees C
+BMC P1V0         | 63h | ok  | 16.3 | 1.01 Volts
+BMC P1V2         | 64h | ok  | 16.4 | 1.20 Volts
+BMC P1V8         | 65h | ok  | 16.5 | 1.81 Volts
+BMC P2V5         | 66h | ok  | 16.6 | 2.51 Volts
+BMC P3V3 STBY    | 67h | ok  | 16.7 | 3.39 Volts
+BMC PV6          | 68h | ok  | 16.2 | 0.60 Volts
+BRICK1 P12V      | 69h | ok  |  0.1 | 12.03 Volts
+BRICK2 P12V      | 6Ah | ok  |  0.1 | 12.10 Volts
+CPU0 13V5        | 6Bh | ns  |  0.1 | No Reading
+CPU0 P1V1        | 6Ch | ns  |  0.1 | No Reading
+CPU0 P1V8        | 6Dh | ns  |  0.1 | No Reading
+CPU0 P3V3        | 6Eh | ns  |  0.1 | No Reading
+CPU0 VCORE0      | 6Fh | ns  |  0.1 | No Reading
+CPU0 VCORE1      | 70h | ns  |  0.1 | No Reading
+CPU0 VDDIO       | 71h | ns  |  0.1 | No Reading
+CPU0 VSOC        | 72h | ns  |  0.1 | No Reading
+CPU1 13V5        | 73h | ns  |  3.16 | No Reading
+CPU1 P1V1        | 74h | ns  |  3.12 | No Reading
+CPU1 P1V8        | 75h | ns  |  3.15 | No Reading
+CPU1 P3V3        | 76h | ns  |  3.13 | No Reading
+CPU1 VCORE0      | 77h | ns  |  0.1 | No Reading
+CPU1 VCORE1      | 78h | ns  |  3.11 | No Reading
+CPU1 VDDIO       | 79h | ns  |  3.14 | No Reading
+CPU1 VSOC        | 7Ah | ns  |  0.1 | No Reading
+MAIN P3V3        | 7Bh | ns  |  0.1 | No Reading
+P48V VIN         | 7Ch | ok  | 14.2 | 53.70 Volts
+
+ipmitool raw 0x04 0x2d 0x00
+ 0f c0 00
+
+ipmitool raw 0x04 0x2d 0x01
+ 0e c0 00
+
+ipmitool raw 0x04 0x2d 0x02
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x03
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x04
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x05
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x06
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x07
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x08
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x09
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x0a
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x0b
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x0c
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x0d
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x0e
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x0f
+ 00 e0 00
+
+ipmitool raw 0x04 0x2d 0x10
+ 00 e0 00
+
+ipmitool raw 0x04 0x21 0x00 0x00 0x00 0x00 0x00 0xff
+ 01 00 00 00 51 01 3b 20 00 00 00 01 00 68 03 01
+ 80 02 80 32 18 18 00 05 00 00 c3 40 00 00 00 d0
+ 00 00 00 00 00 00 00 ff a8 00 00 00 00 00 00 00
+ 00 10 42 52 49 43 4b 31 20 50 31 32 56 20 49 4f
+ 55 54
+
+ipmitool raw 0x04 0x22
+ 02 00
+
+ipmitool raw 0x04 0x27 0x00
+ 18 00 00 00 a8 ff 00
+
+ipmitool raw 0x04 0x27 0x01
+ 18 00 00 00 a8 ff 00
+
+ipmitool raw 0x04 0x27 0x02
+ 18 00 00 00 ce eb 00
+
+ipmitool raw 0x04 0x27 0x03
+ 18 00 00 00 b1 cb 00
+
+ipmitool raw 0x04 0x27 0x04
+ 18 00 00 00 64 73 00
+
+ipmitool raw 0x04 0x27 0x05
+ 18 00 00 00 dc fb 00
+
+ipmitool raw 0x04 0x27 0x06
+ 18 00 00 00 dc fb 00
+
+ipmitool raw 0x04 0x27 0x07
+ 18 00 00 00 d5 f3 00
+
+ipmitool raw 0x04 0x27 0x08
+ 18 00 00 00 d2 f0 00
+
+ipmitool raw 0x04 0x27 0x09
+ 18 00 00 00 ce eb 00
+
+ipmitool raw 0x04 0x27 0x0a
+ 18 00 00 00 b1 cb 00
+
+ipmitool raw 0x04 0x27 0x0b
+ 18 00 00 00 64 73 00
+
+ipmitool raw 0x04 0x27 0x0c
+ 18 00 00 00 dc fb 00
+
+ipmitool raw 0x04 0x27 0x0d
+ 18 00 00 00 dc fb 00
+
+ipmitool raw 0x04 0x27 0x0e
+ 18 00 00 00 d5 f3 00
+
+ipmitool raw 0x04 0x27 0x0f
+ 18 00 00 00 d2 f0 00
+
+ipmitool raw 0x04 0x27 0x10
+ 18 00 00 00 dc f1 00
+
+ipmitool raw 0x04 0x29 0x00
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x01
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x02
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x03
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x04
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x05
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x06
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x07
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x08
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x09
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x0a
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x0b
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x0c
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x0d
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x0e
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x0f
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x29 0x10
+ 40 80 02 40 01
+
+ipmitool raw 0x04 0x2b 0x00
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x01
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x02
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x03
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x04
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x05
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x06
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x07
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x08
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x09
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x0a
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x0b
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x0c
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x0d
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x0e
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x0f
+ 80 00 00 00 00
+
+ipmitool raw 0x04 0x2b 0x10
+ 80 00 00 00 00
+
+ipmitool raw 0x0a 0x10 0x1f
+ 68 00 00
+
+ipmitool raw 0x0a 0x10 0x8d
+
+ipmitool raw 0x0a 0x10 0x99
+ 50 00 00
+
+ipmitool raw 0x0a 0x10 0xc6
+ 58 00 00
+
+ipmitool fru
+FRU Device Description : Builtin FRU Device (ID 0)
+ Device not present (Requested sensor, data, or record not found)
+
+FRU Device Description : Astoria MB (ID 20)
+ Board Mfg Date        : Wed Aug  9 16:55:00 2017 UTC
+ Board Mfg             : Foxconn
+ Board Product         : Astoria MB
+ Board Serial          : ASTFWI210000000
+ Board Part Number     : 1117363-02
+
+FRU Device Description : Agora V2AH (ID 31)
+ Board Mfg Date        : Tue Jan  2 13:45:00 2024 UTC
+ Board Mfg             : Foxconn
+ Board Product         : Agora V2AH
+ Board Serial          : AAHFWI221200035
+ Board Part Number     : 1119041-02
+
+FRU Device Description : warthog_3 (ID 38)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709120
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : warthog_2 (ID 92)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709110
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : warthog_4 (ID 97)
+ Board Mfg Date        : Thu Jul  8 14:17:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709116
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : Granite HalfDome (ID 153)
+ Board Mfg Date        : Tue Apr 27 09:17:00 2021 UTC
+ Board Mfg             : Celestica
+ Board Product         : Granite HalfDome
+ Board Serial          : PNGCTH211724127
+ Board Part Number     : 42000839-12
+
+FRU Device Description : SuperBigGulp (ID 198)
+ Board Mfg Date        : Wed Jan 19 13:14:00 2022 UTC
+ Board Mfg             : Quanta
+ Board Product         : SuperBigGulp
+ Board Serial          : IPB220400072
+ Board Part Number     : 1088368-07
+ Board Extra           : Power Capacity:1500W
+
+FRU Device Description : warthog_1 (ID 207)
+ Board Mfg Date        : Thu Jul  8 14:19:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709121
+ Board Part Number     : KW049419-93404
+
+
+ipmitool raw 0x0a 0x11 0x1f 0x00 0x00 0xff
+ 68 01 01 00 05 00 00 00 f9 01 01 20 14 22 3b aa
+ f8 26 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+ ff ff ff ff ff ff ff ff b6 01 08 19 b9 bf e0 c8
+ 46 6f 78 63 6f 6e 6e 00 cb 41 67 6f 72 61 20 56
+ 32 41 48 00 d0 41 41 48 46 57 49 32 32 31 32 30
+ 30 30 33 35 00 cb 31 31 31 39 30 34 31 2d 30 32
+ 00 c0 c1 00 00 00 00 00 82
+
+ipmitool raw 0x0a 0x11 0x8d 0x00 0x00 0xff
+
+ipmitool raw 0x0a 0x11 0x99 0x00 0x00 0xff
+ 50 01 00 00 01 00 00 00 fe 01 09 19 2d 36 cb ca
+ 43 65 6c 65 73 74 69 63 61 00 d1 47 72 61 6e 69
+ 74 65 20 48 61 6c 66 44 6f 6d 65 00 d0 50 4e 47
+ 43 54 48 32 31 31 37 32 34 31 32 37 00 cc 34 32
+ 30 30 30 38 33 39 2d 31 32 00 00 c1 00 00 00 00
+ 87
+
+ipmitool raw 0x0a 0x11 0xc6 0x00 0x00 0xff
+ 58 01 00 00 01 00 00 00 fe 01 0a 19 fa 14 d1 c7
+ 51 75 61 6e 74 61 00 cd 53 75 70 65 72 42 69 67
+ 47 75 6c 70 00 cd 49 50 42 32 32 30 34 30 30 30
+ 37 32 00 cb 31 30 38 38 33 36 38 2d 30 37 00 c0
+ d5 50 6f 77 65 72 20 43 61 70 61 63 69 74 79 3a
+ 31 35 30 30 57 00 c1 00 04
+
+ipmitool raw 0x0A 0x20
+ 51 87 00 ff ff 40 00 00 00 ff ff ff ff 83
+
+ipmitool raw 0x0A 0x22
+ 04 00
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x00 0x00 0x00 0x0e
+ 01 00 00 00 51 01 3b 20 00 00 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x01 0x00 0x00 0x0e
+ 02 00 01 00 51 01 3b 20 00 01 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x02 0x00 0x00 0x0e
+ 03 00 02 00 51 01 3b 20 00 02 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x03 0x00 0x00 0x0e
+ 04 00 03 00 51 01 3b 20 00 03 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x04 0x00 0x00 0x0e
+ 05 00 04 00 51 01 3b 20 00 04 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x05 0x00 0x00 0x0e
+ 06 00 05 00 51 01 3b 20 00 05 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x06 0x00 0x00 0x0e
+ 07 00 06 00 51 01 3b 20 00 06 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x07 0x00 0x00 0x0e
+ 08 00 07 00 51 01 3b 20 00 07 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x08 0x00 0x00 0x0e
+ 09 00 08 00 51 01 3b 20 00 08 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x09 0x00 0x00 0x0e
+ 0a 00 09 00 51 01 3b 20 00 09 03 3d 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x0a 0x00 0x00 0x0e
+ 0b 00 0a 00 51 01 3b 20 00 0a 03 40 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x0b 0x00 0x00 0x0e
+ 0c 00 0b 00 51 01 3b 20 00 0b 03 3e 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x0c 0x00 0x00 0x0e
+ 0d 00 0c 00 51 01 3b 20 00 0c 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x0d 0x00 0x00 0x0e
+ 0e 00 0d 00 51 01 3b 20 00 0d 03 3c 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x0e 0x00 0x00 0x0e
+ 0f 00 0e 00 51 01 3b 20 00 0e 03 3f 00 68 03 01
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x10 0x00 0x00 0x0e
+ 11 00 10 00 51 01 3b 20 00 10 00 01 00 68 03 01
+
+ipmitool raw 0x0A 0x40
+ 51 00 00 ff ff ff ff ff ff ff ff ff ff 02
+
+ipmitool raw 0x0A 0x43
+
+ipmitool raw 0x0A 0x47
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x02
+ 79 2b 00 02 01 04 65 74 68 30
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x03 0x14 0 0 0
+ 79 2b 00 03
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x04
+ 79 2b 00 04 08
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x00
+ 79 2b 00 05 08 03 50 45 35
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x01
+ 79 2b 00 05 06 03 50 45 33
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x02
+ 79 2b 00 05 04 03 50 45 31
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x03
+ 79 2b 00 05 02 03 50 45 30
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x04
+ 79 2b 00 05 09 03 50 45 36
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x05
+ 79 2b 00 05 0a 03 50 45 37
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x06
+ 79 2b 00 05 07 03 50 45 34
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x07
+ 79 2b 00 05 05 03 50 45 32
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x05 0x08
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x00
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x01
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x02
+ 79 2b 00 06 04 2f 50 45 30
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x03
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x04
+ 79 2b 00 06 04 2f 50 45 31
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x05
+ 79 2b 00 06 04 2f 50 45 32
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x06
+ 79 2b 00 06 04 2f 50 45 33
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x07
+ 79 2b 00 06 04 2f 50 45 34
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x08
+ 79 2b 00 06 04 2f 50 45 35
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x06 0x0b 0x09
+ 79 2b 00 06 04 2f 50 45 36
+
+cat /usr/share/ipmi-entity-association/entity_association_map.json
+{
+    "system_board": [
+        {"instance": 1, "name": "/"}
+    ],
+    "system_internal_expansion_board": [
+        {"instance": 1, "name": "/"}
+    ],
+    "power_system_board": [
+        {"instance": 1, "name": "/"}
+    ],
+    "add_in_card": [
+        {"instance": 2, "name": "/PE0"},
+        {"instance": 4, "name": "/PE1"},
+        {"instance": 5, "name": "/PE2"},
+        {"instance": 6, "name": "/PE3"},
+        {"instance": 7, "name": "/PE4"},
+        {"instance": 8, "name": "/PE5"},
+        {"instance": 9, "name": "/PE6"},
+        {"instance": 10, "name": "/PE7"},
+        {"instance": 60, "name": "/PE0/IO0"},
+        {"instance": 61, "name": "/PE0/IO1"},
+        {"instance": 68, "name": "/PE1/IO0"},
+        {"instance": 69, "name": "/PE1/IO1"},
+        {"instance": 76, "name": "/PE2/IO0"},
+        {"instance": 77, "name": "/PE2/IO1"},
+        {"instance": 84, "name": "/PE3/IO0"},
+        {"instance": 85, "name": "/PE3/IO1"},
+        {"instance": 92, "name": "/PE4/IO0"},
+        {"instance": 93, "name": "/PE4/IO1"},
+        {"instance": 100, "name": "/PE5/IO0"},
+        {"instance": 101, "name": "/PE5/IO1"},
+        {"instance": 108, "name": "/PE6/IO0"},
+        {"instance": 109, "name": "/PE6/IO1"},
+        {"instance": 116, "name": "/PE7/IO0"},
+        {"instance": 117, "name": "/PE7/IO1"}
+    ],
+    "fan": [
+        {"instance": 0, "name": "/FAN0"},
+        {"instance": 1, "name": "/FAN1"},
+        {"instance": 2, "name": "/FAN2"},
+        {"instance": 3, "name": "/FAN3"},
+        {"instance": 4, "name": "/BIGGULP:device:fan0"},
+        {"instance": 5, "name": "/BIGGULP:device:fan1"}
+    ]
+}
+
+ipmitool raw 0x2e 0x30 0x79 0x2b 0 0 0x04 0x65 0x74 0x68 0x30
+ 79 2b 00 00 28 e1 00 00 00 00 00 00
+
+cat /sys/class/net/eth0/statistics/rx_bytes
+57640
+
+ipmitool raw 0x2e 0x30 0x79 0x2b 0 0 0x04 0x65 0x74 0x68 0x31
+ 79 2b 00 00 f8 7a 00 00 00 00 00 00
+
+cat /sys/class/net/eth1/statistics/rx_bytes
+31480
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x00
+ cf c2 00 22 41 0c 00 00 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x01 0xa4 0x78 0x01 0 0 0
+ cf c2 00 0e ca 2f 73 6b 6d 2f 68 73 73 2f 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x01 0x78 0xe3 0x02 0 0 0
+ cf c2 00 94 eb 2f 66 6c 61 73 68 2f 68 61 73 68
+ 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x01 0xcc 0x95 0x03 0 0 0
+ cf c2 00 72 c1 2f 66 6c 61 73 68 2f 62 69 6f 73
+ 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x01 0xe1 0xc4 0x04 0 0 0
+ cf c2 00 ef 38 2f 66 6c 61 73 68 2f 69 6d 61 67
+ 65 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x01 0x55 0xb2 0x05 0 0 0
+ cf c2 00 12 da 2f 66 6c 61 73 68 2f 62 6d 63 63
+ 70 6c 64 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x01 0x89 0x29 0x06 0 0 0
+ cf c2 00 36 be 2f 66 6c 61 73 68 2f 64 75 6d 6d
+ 79 00
+
+ipmitool raw 0x06 0x01
+ 20 80 96 19 02 8f bc 42 00 00 00 00 00 00 00
+
+ipmitool mc info
+Device ID                 : 32
+Device Revision           : 0
+Firmware Revision         : 22.19
+IPMI Version              : 2.0
+Manufacturer ID           : 17084
+Manufacturer Name         : Unknown (0x42BC)
+Product ID                : 0 (0x0000)
+Product Name              : Unknown (0x00)
+Device Available          : no
+Provides Device SDRs      : yes
+Additional Device Support :
+    Sensor Device
+    SDR Repository Device
+    SEL Device
+    FRU Inventory Device
+    Chassis Device
+Aux Firmware Rev Info     : 
+    0x00
+    0x00
+    0x00
+    0x00
+
+ipmitool raw 0x00 0x00
+ 04 20 20 20 20 20
+
+ipmitool raw 0x00 0x01
+ 41 00 70 00
+
+ipmitool raw 0x00 0x01
+ 41 00 70 00
+
+ipmitool raw 0x00 0x02 0x0
+
+
+ipmitool raw 0x00 0x01
+ 41 00 70 00
+
+ipmitool raw 0x00 0x02 0x01
+
+
+ipmitool raw 0x00 0x01
+ 41 00 70 00
+
+ipmitool raw 0x00 0x02 0x03
+
+
+ipmitool chassis identify
+
+ipmitool raw 0x00 0x04 10 0x00
+
+ipmitool chassis identify 10
+
+ipmitool raw 0x00 0x06 0x03
+ 07
+
+ipmitool raw 0x00 0x06 0x02
+ 07
+
+ipmitool chassis policy always-on
+Set chassis power restore policy to always-on
+
+ipmitool raw 0x00 0x06 0x01
+ 07
+
+ipmitool chassis policy previous
+Set chassis power restore policy to previous
+
+ipmitool raw 0x00 0x06 0x00
+ 07
+
+ipmitool chassis policy always-off
+Set chassis power restore policy to always-off
+
+ipmitool chassis policy always-on
+Set chassis power restore policy to always-on
+
+ipmitool chassis status
+System Power         : on
+Power Overload       : false
+Power Interlock      : inactive
+Main Power Fault     : false
+Power Control Fault  : false
+Power Restore Policy : always-on
+Last Power Event     : 
+Chassis Intrusion    : inactive
+Front-Panel Lockout  : inactive
+Drive Fault          : false
+Cooling/Fan Fault    : false
+Front Panel Control  : none
+
+ipmitool raw 0x04 0x22
+ 05 00
+
+ipmitool raw 0x04 0x22
+ 06 00
+
+ipmitool raw 0x04 0x30
+
+ipmitool fru
+FRU Device Description : Builtin FRU Device (ID 0)
+ Device not present (Requested sensor, data, or record not found)
+
+FRU Device Description : Astoria MB (ID 20)
+ Board Mfg Date        : Wed Aug  9 16:55:00 2017 UTC
+ Board Mfg             : Foxconn
+ Board Product         : Astoria MB
+ Board Serial          : ASTFWI210000000
+ Board Part Number     : 1117363-02
+
+FRU Device Description : Agora V2AH (ID 31)
+ Board Mfg Date        : Tue Jan  2 13:45:00 2024 UTC
+ Board Mfg             : Foxconn
+ Board Product         : Agora V2AH
+ Board Serial          : AAHFWI221200035
+ Board Part Number     : 1119041-02
+
+FRU Device Description : warthog_3 (ID 38)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709120
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : warthog_2 (ID 92)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709110
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : warthog_4 (ID 97)
+ Board Mfg Date        : Thu Jul  8 14:17:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709116
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : Granite HalfDome (ID 153)
+ Board Mfg Date        : Tue Apr 27 09:17:00 2021 UTC
+ Board Mfg             : Celestica
+ Board Product         : Granite HalfDome
+ Board Serial          : PNGCTH211724127
+ Board Part Number     : 42000839-12
+
+FRU Device Description : SuperBigGulp (ID 198)
+ Board Mfg Date        : Wed Jan 19 13:14:00 2022 UTC
+ Board Mfg             : Quanta
+ Board Product         : SuperBigGulp
+ Board Serial          : IPB220400072
+ Board Part Number     : 1088368-07
+ Board Extra           : Power Capacity:1500W
+
+FRU Device Description : warthog_1 (ID 207)
+ Board Mfg Date        : Thu Jul  8 14:19:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709121
+ Board Part Number     : KW049419-93404
+
+
+ipmitool raw 0x0a 0x10 31
+ 68 00 00
+
+ipmitool raw 0x0a 0x10 141
+
+ipmitool raw 0x0a 0x10 198
+ 58 00 00
+
+ipmitool raw 0x0a 0x11 31 0 0 255
+ 68 01 01 00 05 00 00 00 f9 01 01 20 14 22 3b aa
+ f8 26 04 ff ff ff ff ff ff ff ff ff ff ff ff ff
+ ff ff ff ff ff ff ff ff b6 01 08 19 b9 bf e0 c8
+ 46 6f 78 63 6f 6e 6e 00 cb 41 67 6f 72 61 20 56
+ 32 41 48 00 d0 41 41 48 46 57 49 32 32 31 32 30
+ 30 30 33 35 00 cb 31 31 31 39 30 34 31 2d 30 32
+ 00 c0 c1 00 00 00 00 00 82
+
+ipmitool raw 0x0a 0x11 141 0 0 255
+
+ipmitool raw 0x0a 0x11 198 0 0 255
+ 58 01 00 00 01 00 00 00 fe 01 0a 19 fa 14 d1 c7
+ 51 75 61 6e 74 61 00 cd 53 75 70 65 72 42 69 67
+ 47 75 6c 70 00 cd 49 50 42 32 32 30 34 30 30 30
+ 37 32 00 cb 31 30 38 38 33 36 38 2d 30 37 00 c0
+ d5 50 6f 77 65 72 20 43 61 70 61 63 69 74 79 3a
+ 31 35 30 30 57 00 c1 00 04
+
+ipmitool raw 0x0a 0x11 198 0 0 255
+ 58 01 00 00 01 00 00 00 fe 01 0a 19 fa 14 d1 c7
+ 51 75 61 6e 74 61 00 cd 53 75 70 65 72 42 69 67
+ 47 75 6c 70 00 cd 49 50 42 32 32 30 34 30 30 30
+ 37 32 00 cb 31 30 38 38 33 36 38 2d 30 37 00 c0
+ d5 50 6f 77 65 72 20 43 61 70 61 63 69 74 79 3a
+ 31 35 30 30 57 00 c1 00 04
+
+ipmitool raw 0x0a 0x12 198 0x0b 0 0xbb
+ 01
+
+ipmitool raw 0x0a 0x11 198 0 0 255
+ 58 01 00 00 01 00 00 00 fe 01 0a 19 fa 14 d1 c7
+ 51 75 61 6e 74 61 00 cd 53 75 70 65 72 42 69 67
+ 47 75 6c 70 00 cd 49 50 42 32 32 30 34 30 30 30
+ 37 32 00 cb 31 30 38 38 33 36 38 2d 30 37 00 c0
+ d5 50 6f 77 65 72 20 43 61 70 61 63 69 74 79 3a
+ 31 35 30 30 57 00 c1 00 04
+
+ipmitool sel list
+
+ipmitool raw 0x0a 0x40
+ 51 00 00 ff ff ff ff ff ff ff ff ff ff 02
+
+ipmitool raw 0x0a 0x43 0x00 0x00 0x01 0x00 0x00 0xff
+
+ipmitool sel elist
+
+ipmitool sel list
+
+ipmitool raw 0x0a 0x47 0x01 0x43 0x4c 0x52 0xaa
+
+ipmitool raw 0x0a 0x47 0x02 0x00 0x43 0x4c 0x52 0xaa
+
+ipmitool raw 0x0a 0x43 0x00 0x00 0x01 0x00 0x00 0xff
+
+ipmitool raw 0x0a 0x47 0x01 0x00 0x43 0x4c 0x52 0xaa
+
+ipmitool mc watchdog get
+Watchdog Timer Use:     SMS/OS (0x04)
+Watchdog Timer Is:      Stopped
+Watchdog Timer Logging: On
+Watchdog Timer Action:  Hard Reset (0x01)
+Pre-timeout interrupt:  None
+Pre-timeout interval:   0 seconds
+Timer Expiration Flags: (0x10)
+                        * SMS/OS
+Initial Countdown:      10.0 sec
+Present Countdown:      0.0 sec
+
+ipmitool mc watchdog get
+Watchdog Timer Use:     SMS/OS (0x04)
+Watchdog Timer Is:      Stopped
+Watchdog Timer Logging: On
+Watchdog Timer Action:  Hard Reset (0x01)
+Pre-timeout interrupt:  None
+Pre-timeout interval:   0 seconds
+Timer Expiration Flags: (0x10)
+                        * SMS/OS
+Initial Countdown:      10.0 sec
+Present Countdown:      0.0 sec
+
+ipmitool raw 0x06 0x22
+
+
+ipmitool mc watchdog get
+Watchdog Timer Use:     SMS/OS (0x44)
+Watchdog Timer Is:      Started/Running
+Watchdog Timer Logging: On
+Watchdog Timer Action:  Hard Reset (0x01)
+Pre-timeout interrupt:  None
+Pre-timeout interval:   0 seconds
+Timer Expiration Flags: (0x10)
+                        * SMS/OS
+Initial Countdown:      10.0 sec
+Present Countdown:      9.9 sec
+
+ipmitool mc watchdog get
+Watchdog Timer Use:     SMS/OS (0x44)
+Watchdog Timer Is:      Started/Running
+Watchdog Timer Logging: On
+Watchdog Timer Action:  Hard Reset (0x01)
+Pre-timeout interrupt:  None
+Pre-timeout interval:   0 seconds
+Timer Expiration Flags: (0x10)
+                        * SMS/OS
+Initial Countdown:      10.0 sec
+Present Countdown:      9.9 sec
+
+ipmitool raw 0x06 0x24 0x02 0x01 0x00 0x14 0x2c 0x01
+
+
+ipmitool mc watchdog get
+Watchdog Timer Use:     BIOS/POST (0x02)
+Watchdog Timer Is:      Stopped
+Watchdog Timer Logging: On
+Watchdog Timer Action:  Hard Reset (0x01)
+Pre-timeout interrupt:  None
+Pre-timeout interval:   0 seconds
+Timer Expiration Flags: None (0x00)
+Initial Countdown:      30.0 sec
+Present Countdown:      30.0 sec
+
+ipmitool mc watchdog get
+Watchdog Timer Use:     BIOS/POST (0x02)
+Watchdog Timer Is:      Stopped
+Watchdog Timer Logging: On
+Watchdog Timer Action:  Hard Reset (0x01)
+Pre-timeout interrupt:  None
+Pre-timeout interval:   0 seconds
+Timer Expiration Flags: None (0x00)
+Initial Countdown:      30.0 sec
+Present Countdown:      30.0 sec
+
+ipmitool raw 0x06 0x25
+ 02 01 00 00 2c 01 2c 01
+
+ipmitool raw 0x06 0x25
+ 02 01 00 00 2c 01 2c 01
+
+ipmitool raw 0x06 0x59 0x00 0x00 0x00 0x00
+ 11 00
+
+ipmitool raw 0x06 0x59 0x00 0x02 0x00 0x00
+ 11 00 00 04 72 6f 75 78 00 00 00 00 00 00 00 00
+ 00 00
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0x00 0x00 0x04 0x65 0x74 0x68 0x30
+ 79 2b 00 00 01
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0x00 0x00 0x04 0x65 0x74 0x68 0x31
+ 79 2b 00 00 01
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x01 0x00
+ 79 2b 00 01 01 00 00 00
+
+ipmitool raw 0x2e 0x32 0x79 0x2b 0 0x01 0x01
+ 79 2b 00 01 01 01 00 00
+
+cat /run/cpld0.version
+1.0.0.0
+
+cat /run/cpld1.version
+1.1.0.0
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x00
+ cf c2 00 22 41 0c 00 00 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x00
+ cf c2 00 22 41 0c 00 00 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0x10 0x0e 0 0 0 0
+ cf c2 00 c1 9e 2f 73 6b 6d 2f 68 73 73 2d 62 61
+ 63 6b 75 70 2f 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0xa4 0x78 1 0 0 0
+ cf c2 00 0e ca 2f 73 6b 6d 2f 68 73 73 2f 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0x78 0xe3 2 0 0 0
+ cf c2 00 94 eb 2f 66 6c 61 73 68 2f 68 61 73 68
+ 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0xcc 0x95 2 0 0 0
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0xcc 0x95 3 0 0 0
+ cf c2 00 72 c1 2f 66 6c 61 73 68 2f 62 69 6f 73
+ 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0xe1 0xc4 4 0 0 0
+ cf c2 00 ef 38 2f 66 6c 61 73 68 2f 69 6d 61 67
+ 65 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0x55 0xb2 5 0 0 0
+ cf c2 00 12 da 2f 66 6c 61 73 68 2f 62 6d 63 63
+ 70 6c 64 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0x89 0x29 6 0 0 0
+ cf c2 00 36 be 2f 66 6c 61 73 68 2f 64 75 6d 6d
+ 79 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0x3d 0x5f 7 0 0 0
+ cf c2 00 e8 0b 2f 66 6c 61 73 68 2f 6d 62 63 70
+ 6c 64 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0 1 0xd3 0x8b 8 0 0 0
+ cf c2 00 7a 47 2f 66 6c 61 73 68 2f 63 6c 65 61
+ 6e 75 70 00
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x02 0xc1 0xcd 0x03 0x00 0x2F 0x66 0x6C 0x61 0x73 0x68 0x2F 0x63 0x6C 0x65 0x61
+
+ipmitool raw 0x2e 0x80 0xcf 0xc2 0x00 0x02 0xc1 0xcd 0x03 0x00 0x2F 0x66 0x6C 0x61 0x73 0x68 0x2F 0x63 0x6C 0x65 0x61 0x6E 0x75 0x70 0x2F 0x62 0x6C 0x6F 0x62
+
+ipmitool raw 0x0a 0x10 31
+ 68 00 00
+
+ipmitool raw 0x0a 0x10 141
+
+ipmitool raw 0x0a 0x10 153
+ 50 00 00
+
+ipmitool raw 0x0a 0x10 198
+ 58 00 00
+
+ipmitool raw 0x0a 0x23 0x00 0x00 0x00 0x000 0x00 0x0e
+ 01 00 00 00 51 01 3b 20 00 00 00 01 00 68 03 01
+
+ipmitool raw 0x0a 0x42
+ 01 00
+
+ipmitool raw 0x0a 0x47 0x01 0x00 0x43 0x4c 0x52 0xaa
+ 01
+
+ipmitool sel list
