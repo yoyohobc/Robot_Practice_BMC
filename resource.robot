@@ -9,11 +9,13 @@ ${BMC_PASSWORD}   0penBmc
 ${bmc_dst_path}   /home/root
 ${os_dst_path}   /tmp
 ${RESULT_PATH}   ${CURDIR}/results
+${SANITY_PATH}   ${CURDIR}/sanity
 ${PYTHONS_PATH}   ${CURDIR}/pythons
 ${SCRIPTS_PATH}   ${CURDIR}/scripts
 ${CHMOD_CMD}   chmod +x
 ${XLSX_MODEL}   ${PYTHONS_PATH}/Astoria-SIT-TestPlan_BMCQA_EVT2.xlsx
 #script name
+@{SANITY_LIST}    fru   mc_info   sel_elist   sensor_list_all
 ${SDRINFO}   sdrinfo
 ${THRESHOLD}   threshold
 ${HEXDUMP}   hexdump

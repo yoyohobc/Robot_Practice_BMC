@@ -22,7 +22,7 @@ def replace_ip():
             file.write(shFile)
 
 def run_redfish_script():
-    os.system(BuiltIn().get_variable_value("${CHMOD_CMD}")+' '+sh_path)  
+    os.system(BuiltIn().get_variable_value("${CHMOD_CMD}")+' '+sh_path)
     cmd_buf = sh_path + ' > ' + resPath + redfish_ipv6 + '.txt'
     os.system(cmd_buf)
 

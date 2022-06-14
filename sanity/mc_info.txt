@@ -1,0 +1,18 @@
+
+ipmitool mc info
+Device ID                 : 0
+Device Revision           : 0
+Firmware Revision         : 22.23
+IPMI Version              : 2.0
+Manufacturer ID           : 11129
+Manufacturer Name         : Google, Inc.
+Product ID                : 14426 (0x385a)
+Product Name              : Unknown (0x385A)
+Device Available          : no
+Provides Device SDRs      : no
+Additional Device Support :
+Aux Firmware Rev Info     : 
+    0x00
+    0x00
+    0x00
+    0x00

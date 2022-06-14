@@ -2,6 +2,12 @@
 Resource  ./service.robot
 Test Teardown   Close SCP and SSH
 *** Test Cases ***
+Run Sanity
+    [Tags]  Run_Sanity
+    Copy Sanity Scripts to BMC
+    Execute sanity scripts on BMC
+    Get sanity result from BMC
+
 Run BMC
     [Tags]  Run_BMC
     Copy Scripts to BMC
@@ -21,4 +27,5 @@ Run Redfish
 
 Run IPMI
     [Tags]  Run_IPMI
-    Get IPMI result
+    rrr kkk
+    #Get IPMI result

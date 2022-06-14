@@ -1,0 +1,62 @@
+
+ipmitool fru
+FRU Device Description : Builtin FRU Device (ID 0)
+FRU Device Description : Astoria MB (ID 20)
+ Board Mfg Date        : Wed Aug  9 16:55:00 2017 UTC
+ Board Mfg             : Foxconn
+ Board Product         : Astoria MB
+ Board Serial          : ASTFWI210000000
+ Board Part Number     : 1117363-02
+
+FRU Device Description : Agora V2AH (ID 31)
+ Board Mfg Date        : Tue Jan  2 13:45:00 2024 UTC
+ Board Mfg             : Foxconn
+ Board Product         : Agora V2AH
+ Board Serial          : AAHFWI221200035
+ Board Part Number     : 1119041-02
+
+FRU Device Description : warthog_3 (ID 38)
+ Board Mfg Date        : Thu Jul  8 14:17:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709116
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : razorback_1 (ID 66)
+ Board Mfg Date        : Mon Dec 17 06:34:00 2018 UTC
+ Board Mfg             : Kingston
+ Board Serial          : 84919349
+ Board Part Number     : KR021802-01
+ Product Manufacturer  : KTW
+ Product Name          : Razorback
+ Product Part Number   : KR115194-80102
+ Product Serial        : 85025965
+
+FRU Device Description : warthog_2 (ID 92)
+ Board Mfg Date        : Thu Jul  8 14:22:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709120
+ Board Part Number     : KW049419-93404
+
+FRU Device Description : Granite HalfDome (ID 153)
+ Board Mfg Date        : Tue Apr 27 09:17:00 2021 UTC
+ Board Mfg             : Celestica
+ Board Product         : Granite HalfDome
+ Board Serial          : PNGCTH211724127
+ Board Part Number     : 42000839-12
+
+FRU Device Description : SuperBigGulp (ID 198)
+ Board Mfg Date        : Wed Jan 19 13:14:00 2022 UTC
+ Board Mfg             : Quanta
+ Board Product         : SuperBigGulp
+ Board Serial          : IPB220400072
+ Board Part Number     : 1092348-06
+
+FRU Device Description : warthog_1 (ID 207)
+ Board Mfg Date        : Thu Jul  8 14:19:00 2021 UTC
+ Board Mfg             : Kingston
+ Board Product         : Warthog
+ Board Serial          : 12709121
+ Board Part Number     : KW049419-93404
+

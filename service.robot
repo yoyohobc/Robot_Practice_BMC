@@ -15,6 +15,13 @@ Redfish Auto
     redfishAuto.run_redfish_script
     redfishAuto.redfish_input
 
+Copy Sanity Scripts to BMC
+    SCP Open to BMC
+    FOR    ${ScriptName}    IN    @{SANITY_LIST}
+        scp.Put File    ${SCRIPTS_PATH}/${ScriptName}.sh  ${bmc_dst_path}/
+    END
+    scp.Close Connection
+
 Copy Scripts to BMC
     @{ScriptsList} =    Set Variable    ${SDRINFO}   ${THRESHOLD}   ${HEXDUMP}
     SCP Open to BMC
@@ -46,6 +53,13 @@ Execute scripts on BMC
 
     ssh.Close Connection
 
+Execute sanity scripts on BMC
+    SSH Login to BMC
+
+    Execute multiple scripts    @{SANITY_LIST}    scripts_path=${bmc_dst_path}
+
+    ssh.Close Connection
+
 Get result from OS
     SCP Open to OS
     scp.Get File    ${os_dst_path}/${Configcheck}.txt  ${RESULT_PATH}
@@ -65,6 +79,17 @@ Get result from BMC
 
     BMC Execute Command     rm *
 
+Get sanity result from BMC
+    SCP Open to BMC
+
+    FOR    ${File}    IN    @{SANITY_LIST}
+        scp.Get File    ${bmc_dst_path}/${File}.txt  ${SANITY_PATH}
+    END
+
+    scp.Close Connection
+
+    BMC Execute Command     rm *
+
 Get IPMI result
     Wait Until Keyword Succeeds
     ...   7 min  10 sec   SCP Open to BMC
@@ -74,3 +99,9 @@ Get IPMI result
     scp.Get File    ${bmc_dst_path}/${IPMI_CMDS}.txt  ${RESULT_PATH}
     BMC Execute Command     rm *
     Close SCP and SSH
+
+rrr kkk
+    SSH Login to BMC
+    ${output}  ${stderr}=  ssh.Execute Command  grep ^VERSION_ID= /etc/os-release | cut -f 2 -d '='
+    ...  return_stderr=True
+    Log  ${stderr}

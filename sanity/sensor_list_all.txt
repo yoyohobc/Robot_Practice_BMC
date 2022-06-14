@@ -1,0 +1,131 @@
+
+ipmitool sensor list all
+BRICK1 P12V IOUT | 7.667      | Amps       | ok    | na        | na        | na        | 75.768    | 115.005   | na        
+BRICK2 P12V IOUT | 5.863      | Amps       | ok    | na        | na        | na        | 75.768    | 115.005   | na        
+CPU0 P1V1 IOUT   | 5.712      | Amps       | ok    | na        | na        | na        | 84.048    | 95.880    | na        
+CPU0 P1V8 IOUT   | 4.686      | Amps       | ok    | na        | na        | na        | 12.567    | 14.413    | na        
+CPU0 P3V3 IOUT   | 0.000      | Amps       | ok    | na        | na        | na        | 3.140     | 3.611     | na        
+CPU0 VCORE0 IOUT | 0.000      | Amps       | ok    | na        | na        | na        | 242.000   | 276.100   | na        
+CPU0 VCORE1 IOUT | 0.000      | Amps       | ok    | na        | na        | na        | 242.000   | 276.100   | na        
+CPU0 VDDIO IOUT  | 24.150     | Amps       | ok    | na        | na        | na        | 146.970   | 167.670   | na        
+CPU0 VSOC IOUT   | 44.200     | Amps       | ok    | na        | na        | na        | 136.500   | 156.000   | na        
+CPU1 P1V1 IOUT   | 6.120      | Amps       | ok    | na        | na        | na        | 84.048    | 95.880    | na        
+CPU1 P1V8 IOUT   | 3.266      | Amps       | ok    | na        | na        | na        | 12.567    | 14.413    | na        
+CPU1 P3V3 IOUT   | 0.000      | Amps       | ok    | na        | na        | na        | 3.140     | 3.611     | na        
+CPU1 VCORE0 IOUT | 0.000      | Amps       | ok    | na        | na        | na        | 242.000   | 276.100   | na        
+CPU1 VCORE1 IOUT | 0.000      | Amps       | ok    | na        | na        | na        | 242.000   | 276.100   | na        
+CPU1 VDDIO IOUT  | 16.560     | Amps       | ok    | na        | na        | na        | 146.970   | 167.670   | na        
+CPU1 VSOC IOUT   | 40.950     | Amps       | ok    | na        | na        | na        | 136.500   | 156.000   | na        
+MAIN P3V3 IOUT   | 0.000      | Amps       | ok    | na        | na        | na        | 31.900    | 34.945    | na        
+P48V IOUT        | 6.864      | Amps       | ok    | na        | na        | na        | 52.624    | 72.930    | na        
+fan0 pwm         | 19.992     | unspecified | ok    | na        | na        | na        | na        | na        | na        
+fan1 pwm         | 19.992     | unspecified | ok    | na        | na        | na        | na        | na        | na        
+fan2 pwm         | 19.992     | unspecified | ok    | na        | na        | na        | na        | na        | na        
+fan3 pwm         | 19.992     | unspecified | ok    | na        | na        | na        | na        | na        | na        
+fan4 pwm         | 39.984     | unspecified | ok    | na        | na        | na        | na        | na        | na        
+fan5 pwm         | 39.984     | unspecified | ok    | na        | na        | na        | na        | na        | na        
+fan0 tach        | 3621.000   | RPM        | ok    | na        | 994.000   | 1988.000  | 18105.000 | 18105.000 | na        
+fan1 tach        | 3621.000   | RPM        | ok    | na        | 994.000   | 1988.000  | 18105.000 | 18105.000 | na        
+fan2 tach        | 3621.000   | RPM        | ok    | na        | 994.000   | 1988.000  | 18105.000 | 18105.000 | na        
+fan3 tach        | 3621.000   | RPM        | ok    | na        | 994.000   | 1988.000  | 18105.000 | 18105.000 | na        
+fan4 tach        | 9120.000   | RPM        | ok    | na        | 1026.000  | 2052.000  | 27474.000 | 27474.000 | na        
+fan5 tach        | 9120.000   | RPM        | ok    | na        | 1026.000  | 2052.000  | 27474.000 | 27474.000 | na        
+CPU0 P1V1 POUT   | 4.041      | Watts      | ok    | na        | na        | na        | na        | 105.515   | na        
+CPU0 P1V8 POUT   | 8.001      | Watts      | ok    | na        | na        | na        | 22.733    | 25.908    | na        
+CPU0 P3V3 POUT   | 0.000      | Watts      | ok    | na        | na        | na        | 10.400    | 11.856    | na        
+CPU0 VCORE0 POUT | 0.000      | Watts      | ok    | na        | na        | na        | 363.000   | 414.150   | na        
+CPU0 VCORE1 POUT | 0.000      | Watts      | ok    | na        | na        | na        | 363.000   | 414.150   | na        
+CPU0 VDDIO POUT  | 24.600     | Watts      | ok    | na        | na        | na        | 176.300   | 201.720   | na        
+CPU0 VSOC POUT   | 50.700     | Watts      | ok    | na        | na        | na        | 163.800   | 187.200   | na        
+CPU1 P1V1 POUT   | 7.184      | Watts      | ok    | na        | na        | na        | 92.494    | 105.515   | na        
+CPU1 P1V8 POUT   | 5.969      | Watts      | ok    | na        | na        | na        | 22.733    | 25.908    | na        
+CPU1 P3V3 POUT   | 0.000      | Watts      | ok    | na        | na        | na        | 10.400    | 11.856    | na        
+CPU1 VCORE0 POUT | 0.000      | Watts      | ok    | na        | na        | na        | 363.000   | 414.150   | na        
+CPU1 VCORE1 POUT | 0.000      | Watts      | ok    | na        | na        | na        | 363.000   | 414.150   | na        
+CPU1 VDDIO POUT  | 18.040     | Watts      | ok    | na        | na        | na        | 176.300   | 201.720   | na        
+CPU1 VSOC POUT   | 46.800     | Watts      | ok    | na        | na        | na        | 163.800   | 187.200   | na        
+HOTSWAP PIN      | 389.400    | Watts      | ok    | na        | na        | na        | na        | na        | na        
+BRICK1 P12V T    | 33.000     | degrees C  | ok    | na        | na        | na        | 94.000    | 114.000   | na        
+BRICK2 P12V T    | 32.000     | degrees C  | ok    | na        | na        | na        | 94.000    | 114.000   | na        
+CPU0 DIMM 0 T    | 41.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+CPU0 DIMM 1 T    | 52.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+CPU0 NBM T       | na         | degrees C  | na    | na        | na        | na        | 80.000    | 85.000    | na        
+CPU0 P1V1 T      | 41.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU0 P1V8 T      | 41.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU0 P3V3 T      | 42.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU0 T           | 58.000     | degrees C  | ok    | na        | na        | na        | 92.000    | 95.000    | na        
+CPU0 VCORE0 T    | 45.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU0 VCORE1 T    | 40.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU0 VIO T       | 45.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU0 VSOC T      | 47.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 DIMM 0 T    | 54.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+CPU1 DIMM 1 T    | 49.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+CPU1 NBM T       | na         | degrees C  | na    | na        | na        | na        | 80.000    | 85.000    | na        
+CPU1 P1V1 T      | 42.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 P1V8 T      | 44.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 P3V3 T      | 36.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 T           | 60.000     | degrees C  | ok    | na        | na        | na        | 92.000    | 95.000    | na        
+CPU1 VCORE0 T    | 48.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 VCORE1 T    | 42.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 VIO T       | 39.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+CPU1 VSOC T      | 51.000     | degrees C  | ok    | na        | na        | na        | 90.000    | 95.000    | na        
+DIMM0 T          | 38.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM1 T          | 39.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM2 T          | 39.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM3 T          | 40.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM4 T          | 41.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM5 T          | 40.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM6 T          | 49.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM7 T          | 52.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM8 T          | 52.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM9 T          | 41.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM10 T         | 41.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM11 T         | 51.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM12 T         | 52.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM13 T         | 54.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM14 T         | 54.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM15 T         | 54.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM16 T         | 53.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM17 T         | 50.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM18 T         | 46.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM19 T         | 48.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM20 T         | 49.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM21 T         | 48.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM22 T         | 48.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+DIMM23 T         | 44.000     | degrees C  | ok    | na        | na        | na        | 85.000    | 95.000    | na        
+HOTSWAP T        | 33.000     | degrees C  | ok    | na        | na        | na        | 94.000    | 109.000   | na        
+M2 T             | na         | degrees C  | na    | na        | na        | na        | 65.238    | 70.218    | na        
+MB INLET T       | 23.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+MB OUTLET T 1    | 32.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+MB OUTLET T 2    | 36.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+MB OUTLET T 3    | 29.000     | degrees C  | ok    | na        | na        | na        | na        | na        | na        
+fleeting0        | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+fleeting1        | na         | degrees C  | na    | na        | na        | na        | na        | na        | na        
+thermal zone0    | na         | degrees C  | na    | na        | na        | na        | 108.000   | 110.000   | na        
+thermal zone1    | na         | degrees C  | na    | na        | na        | na        | 108.000   | 110.000   | na        
+BMC P1V0         | 1.006      | Volts      | ok    | na        | 0.874     | 0.920     | 1.076     | 1.131     | na        
+BMC P1V2         | 1.201      | Volts      | ok    | na        | 1.037     | 1.100     | 1.303     | 1.357     | na        
+BMC P1V8         | 1.813      | Volts      | ok    | na        | 1.568     | 1.656     | 1.940     | 2.029     | na        
+BMC P2V5         | 2.507      | Volts      | ok    | na        | 2.178     | 2.302     | 2.699     | 2.836     | na        
+BMC P3V3 STBY    | 3.391      | Volts      | ok    | na        | 2.862     | 3.038     | 3.567     | 3.724     | na        
+BMC PV6          | 0.600      | Volts      | ok    | na        | 0.521     | 0.550     | 0.650     | 0.681     | na        
+BRICK1 P12V      | 12.033     | Volts      | ok    | na        | 10.458    | 11.025    | 12.978    | 13.545    | na        
+BRICK2 P12V      | 12.096     | Volts      | ok    | na        | 10.458    | 11.025    | 12.978    | 13.545    | na        
+CPU0 13V5        | 13.419     | Volts      | ok    | na        | 8.733     | 9.230     | 16.188    | 16.969    | na        
+CPU0 P1V1        | 1.104      | Volts      | ok    | na        | 0.828     | 0.876     | 1.188     | 1.236     | na        
+CPU0 P1V8        | 1.800      | Volts      | ok    | na        | 1.572     | 1.656     | 1.944     | 2.028     | na        
+CPU0 P3V3        | 2.745      | Volts      | ok    | na        | 2.391     | 2.525     | 2.965     | 3.099     | na        
+CPU0 VCORE0      | 1.032      | Volts      | ok    | na        | 0.480     | 0.516     | 2.160     | 2.256     | na        
+CPU0 VCORE1      | 1.032      | Volts      | ok    | na        | 0.480     | 0.516     | 2.160     | 2.256     | na        
+CPU0 VDDIO       | 1.104      | Volts      | ok    | na        | 0.780     | 0.828     | 1.296     | 1.356     | na        
+CPU0 VSOC        | 1.164      | Volts      | ok    | na        | 0.648     | 0.696     | 1.296     | 1.356     | na        
+CPU1 13V5        | 13.490     | Volts      | ok    | na        | 8.733     | 9.230     | 16.188    | 16.969    | na        
+CPU1 P1V1        | 1.104      | Volts      | ok    | na        | 0.828     | 0.876     | 1.188     | 1.236     | na        
+CPU1 P1V8        | 1.800      | Volts      | ok    | na        | 1.572     | 1.656     | 1.944     | 2.028     | na        
+CPU1 P3V3        | 2.745      | Volts      | ok    | na        | 2.391     | 2.525     | 2.965     | 3.099     | na        
+CPU1 VCORE0      | 1.032      | Volts      | ok    | na        | 0.480     | 0.516     | 2.160     | 2.256     | na        
+CPU1 VCORE1      | 1.032      | Volts      | ok    | na        | 0.480     | 0.516     | 2.160     | 2.256     | na        
+CPU1 VDDIO       | 1.104      | Volts      | ok    | na        | 0.780     | 0.828     | 1.296     | 1.356     | na        
+CPU1 VSOC        | 1.164      | Volts      | ok    | na        | 0.648     | 0.696     | 1.296     | 1.356     | na        
+MAIN P3V3        | 3.297      | Volts      | ok    | na        | 2.873     | 3.062     | 3.580     | 3.721     | na        
+P48V VIN         | 53.704     | Volts      | ok    | na        | 34.888    | 36.848    | 61.152    | 61.936    | na        
